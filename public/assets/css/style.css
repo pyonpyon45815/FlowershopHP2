@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -171,11 +172,17 @@ select {
   vertical-align: middle;
 }
 
-img {
-  background-color: blue;
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 6.2rem;
+  color: #2b2b2b;
 }
 
 p {
-  color: pink;
+  font-size: 2.4rem;
+  font-family: ‘Noto Sans JP’, sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

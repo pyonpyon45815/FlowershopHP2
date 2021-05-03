@@ -209,11 +209,22 @@ h3 {
   letter-spacing: 1.92px;
 }
 
-header {
-  background-color: red;
+.l-header {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+}
+
+.l-hero {
+  background-image: url("../../assets/img/top.jpg");
+  width: 100%;
 }
 
 .l-footer {
+  background-color: red;
+}
+
+.c-img__heroLogo {
   background-color: red;
 }
 /*# sourceMappingURL=style.css.map */

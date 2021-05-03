@@ -8,7 +8,9 @@
         "../scss/Layout/_header.scss",
         "../scss/Layout/_hero.scss",
         "../scss/Layout/_main.scss",
-        "../scss/Layout/_footer.scss"
+        "../scss/Layout/_footer.scss",
+        "../scss/Object/Component/_image.scss",
+        "../scss/Object/Component/_button.scss"
     ],
     "names": [],
     "file": "style.css"

@@ -1,5 +1,9 @@
+// background-imageを横幅100%で綺麗に可変表示させる(レスポンシブ、スマホサイト制作時とかに) 
 .l-hero {
     background-image: url("../../assets/img/top.jpg");
-    width: 100%;
-    min-height: 71rem;
+    height: 0;
+    /* 表示画像の高さ ÷ 表示画像の幅 × 100 */
+    padding-top: 94.66%;
+    background: url("../../assets/img/top.jpg") 0 0 no-repeat;
+    background-size: contain;
 }

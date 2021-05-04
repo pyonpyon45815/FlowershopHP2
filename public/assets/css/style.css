@@ -213,19 +213,27 @@ h3 {
   position: absolute;
   background-color: transparent;
   width: 100%;
+  height: auto;
 }
 
 .l-hero {
   background-image: url("../../assets/img/top.jpg");
   width: 100%;
+  min-height: 71rem;
 }
 
 .l-footer {
   background-color: red;
 }
 
-.c-image__heroLogo {
-  background-color: red;
+.c-image__headerLogo {
+  width: 13.2rem;
+  height: 5rem;
+  margin: 4.2rem 3rem;
+}
+
+img {
+  width: 20rem;
 }
 
 .c-button {
@@ -238,6 +246,10 @@ h3 {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.c-p__heroText {
+  color: violet;
 }
 
 .p-hamburger {
@@ -320,9 +332,5 @@ h3 {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
-}
-
-.c-p__heroText {
-  color: violet;
 }
 /*# sourceMappingURL=style.css.map */

@@ -185,6 +185,31 @@ h1 {
   color: #2b2b2b;
   font-weight: semibold;
   letter-spacing: 1.24px;
+  text-align: center;
+  margin-top: 15.3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+h1:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  /*線の上下位置*/
+  width: 60px;
+  /*線の長さ*/
+  height: 3px;
+  /*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: black;
+  /*線の色*/
+  border-radius: 2px;
+  /*線の丸み*/
 }
 
 p {
@@ -193,6 +218,9 @@ p {
   color: #000000;
   font-weight: 300;
   letter-spacing: 1.92px;
+  line-height: 1.75;
+  display: inline-block;
+  margin-top: 5.5rem;
 }
 
 h2 {
@@ -221,6 +249,7 @@ h3 {
   width: 100%;
   height: 71rem;
   background-size: cover;
+  text-align: center;
 }
 
 .l-footer {
@@ -236,7 +265,7 @@ h3 {
 .c-image__heroLogo {
   width: 31.7rem;
   height: 12.9rem;
-  margin: 22.5rem 21.5rem 0;
+  margin: 22.5rem 0 0 0;
 }
 
 img {
@@ -258,8 +287,8 @@ img {
 .c-p__heroText {
   color: #ffffff;
   letter-spacing: 0.96px;
-  text-align: center;
   margin-top: 5rem;
+  display: block;
 }
 
 .p-hamburger {
@@ -328,6 +357,10 @@ img {
 .p-hamburger[aria-expanded="true"] .p-hamburger__line::after {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+.p-main__container {
+  margin: 0 3.1rem;
 }
 
 .u-visuallyHidden {

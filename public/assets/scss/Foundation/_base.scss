@@ -26,7 +26,7 @@ h1 {
         /*線の上下位置*/
         width: 60px;
         /*線の長さ*/
-        height: 3px;
+        height: 1px;
         /*線の太さ*/
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -47,6 +47,7 @@ p {
     line-height: 1.75;
     display: inline-block;
     margin-top: 5.5rem;
+    text-align: justify;
 }
 
 h2 {

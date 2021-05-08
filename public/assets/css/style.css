@@ -238,7 +238,7 @@ h3 {
 }
 
 article {
-  margin-bottom: 13rem;
+  margin-bottom: 13.5rem;
 }
 
 article p {
@@ -304,6 +304,16 @@ article p {
   height: 78rem;
 }
 
+.c-image__wedding {
+  width: 58.5rem;
+  height: 78rem;
+}
+
+.c-image__foryourself {
+  width: 58.5rem;
+  height: 58.5rem;
+}
+
 img {
   width: 20rem;
 }
@@ -343,6 +353,11 @@ img {
 .c-h2__decoration {
   display: inline-block;
   margin-right: 31.5rem;
+}
+
+.c-h2__foryourself {
+  display: inline-block;
+  margin-right: 28.5rem;
 }
 
 .p-hamburger {
@@ -417,7 +432,11 @@ img {
   margin: 0 3.1rem;
 }
 
-.c-article__decoration {
+.p-article__decoration {
+  text-align: right;
+}
+
+.p-article__foryourself {
   text-align: right;
 }
 

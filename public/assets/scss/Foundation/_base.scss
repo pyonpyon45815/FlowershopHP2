@@ -14,7 +14,6 @@ h1 {
     letter-spacing: 1.24px;
     text-align: center;
     margin-top: 15.3rem;
-    box-sizing: border-box;
     // 下線部表示
     position: relative;
     margin-bottom: 1em;
@@ -46,7 +45,7 @@ p {
     letter-spacing: 1.92px;
     line-height: 1.75;
     display: inline-block;
-    margin-top: 5.5rem;
+    margin-top: 3.5rem;
     text-align: justify;
 }
 
@@ -55,6 +54,7 @@ h2 {
     color: #2b2b2b;
     font-weight: semibold;
     letter-spacing: 0.92px;
+    margin-top: 3.5rem;
 }
 
 h3 {
@@ -62,4 +62,11 @@ h3 {
     color: #000000;
     font-weight: normal;
     letter-spacing: 1.92px;
+}
+
+article {
+    margin-bottom: 13rem;
+    p {
+        width: 58.5rem;
+    }
 }

@@ -195,7 +195,7 @@ h1:before {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -60px;
+  bottom: -53px;
   /*線の上下位置*/
   width: 60px;
   /*線の長さ*/
@@ -287,7 +287,7 @@ article p {
 }
 
 .c-background__color {
-  background-color: gray;
+  background-color: #e9e9e9;
   width: 100%;
   height: 21rem;
   position: absolute;
@@ -314,8 +314,9 @@ article p {
   height: 58.5rem;
 }
 
-img {
-  width: 20rem;
+.c-image__florist {
+  width: 100%;
+  height: 43rem;
 }
 
 .c-button {
@@ -338,12 +339,33 @@ img {
   text-align: center;
 }
 
+.c-p__floristTitletext {
+  display: block;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.c-p__floristText {
+  width: 100%;
+}
+
 .c-background__color {
   position: absolute;
   bottom: 0;
   top: 60rem;
   z-index: -1;
   background-color: #f3f3f3;
+}
+
+.c-background__colorTwo {
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 384rem;
+  top: 564rem;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  left: 0;
 }
 
 .c-h1__Works {
@@ -430,6 +452,10 @@ img {
 
 .p-main__container {
   margin: 0 3.1rem;
+}
+
+.p-section__florist {
+  margin-top: 27rem;
 }
 
 .p-article__decoration {

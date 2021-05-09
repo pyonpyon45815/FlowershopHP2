@@ -370,6 +370,10 @@ article p {
   margin-bottom: 3.5rem;
 }
 
+.c-p__contactText {
+  text-align: center;
+}
+
 .c-background__color {
   position: absolute;
   bottom: 0;
@@ -401,6 +405,15 @@ article p {
 .c-h2__foryourself {
   display: inline-block;
   margin-right: 28.5rem;
+}
+
+.c-title__contact {
+  margin: 0;
+  padding-top: 15rem;
+}
+
+.c-p__contactText {
+  margin: 0 3.1rem;
 }
 
 .p-hamburger {
@@ -477,6 +490,11 @@ article p {
 
 .p-section__florist {
   margin-top: 27rem;
+}
+
+.p-section__contact {
+  background-image: url(../../assets/img/contact.jpg);
+  height: 73.5rem;
 }
 
 .p-article__decoration {

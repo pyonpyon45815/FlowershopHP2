@@ -7,11 +7,25 @@
 }
 
 .c-p__floristTitletext {
-    display: block;
+    display: inline-block;
+    width: 100%;
     text-align: center;
     margin-bottom: 8rem;
 }
 
 .c-p__floristText {
     width: 100%;
+}
+
+.c-p__informationTitletext {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.c-p__accessText {
+    border-left: 2px solid rgb(131, 131, 131);
+    margin: 0;
+    padding-left: 4.3rem;
 }

@@ -235,6 +235,7 @@ h3 {
   color: #000000;
   font-weight: normal;
   letter-spacing: 1.92px;
+  width: 14.3rem;
 }
 
 article {
@@ -319,6 +320,11 @@ article p {
   height: 43rem;
 }
 
+.c-image__information {
+  width: 100%;
+  height: 33rem;
+}
+
 .c-button {
   position: relative;
   display: inline-block;
@@ -340,13 +346,27 @@ article p {
 }
 
 .c-p__floristTitletext {
-  display: block;
+  display: inline-block;
+  width: 100%;
   text-align: center;
   margin-bottom: 8rem;
 }
 
 .c-p__floristText {
   width: 100%;
+}
+
+.c-p__informationTitletext {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.c-p__accessText {
+  border-left: 2px solid #838383;
+  margin: 0;
+  padding-left: 4.3rem;
 }
 
 .c-background__color {
@@ -361,7 +381,7 @@ article p {
   background-color: #f3f3f3;
   width: 100%;
   height: 384rem;
-  top: 564rem;
+  top: 565rem;
   position: absolute;
   z-index: -1;
   right: 0;
@@ -464,6 +484,16 @@ article p {
 
 .p-article__foryourself {
   text-align: right;
+}
+
+.p-ul__access {
+  margin-top: 4rem;
+}
+
+.p-li__access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .u-visuallyHidden {

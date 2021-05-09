@@ -251,6 +251,7 @@ article p {
   background-color: transparent;
   width: 100%;
   height: auto;
+  position: fixed;
 }
 
 .l-hero {

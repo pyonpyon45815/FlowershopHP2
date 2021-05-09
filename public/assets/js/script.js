@@ -1,5 +1,5 @@
 // ハンバーガーメニュー
-(function() {
+$(function() {
     $('#js-buttonHamburger').click(function() {
         $('body').toggleClass('is-drawerActive');
 
@@ -9,7 +9,7 @@
             $(this).attr('aria-expanded', false);
         }
     });
-})();
+});
 
 // modal
 $(function() {
@@ -45,4 +45,11 @@ $(function() {
         $('body,html').animate({ scrollTop: position }, speed, 'swing');
         return false;
     });
+});
+$(window).on('scroll', function() {
+    if (400 < $(this).scrollTop()) {
+        $('.header').addClass('change-color');
+         } else {
+            $('.header').removeClass('change-color');
+             }
 });

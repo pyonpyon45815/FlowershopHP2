@@ -1,0 +1,44 @@
+// モーダル表示時に背景固定
+.fixed {
+    position: fixed;
+    left: 0;
+}
+
+// ここまで 
+.content {
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.modal {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.modal__bg {
+    background: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+
+.modal__content {
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    .p-modal__text ul li {
+        margin-bottom: 3rem;
+    }
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 3rem;
+    }
+}

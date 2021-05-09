@@ -20,14 +20,37 @@
 
 
     <header class="l-header">
+
         <img class="c-image__headerLogo" src="assets/img/logologo2.svg" alt="左上ロゴ">
-        <button class="c-button__hamburger c-button p-hamburger" type="button" id="js-buttonHamburger" aria-controls="global-nav" aria-expanded="false">
+
+        <button class="js-modal-open c-button__hamburger c-button p-hamburger" type="button" id="js-buttonHamburger" aria-controls="global-nav" aria-expanded="false">
             <span class="p-hamburger__line">
                 <span class="u-visuallyHidden">
                     メニューを開閉する
                 </span>
             </span>
         </button>
+
+        <!-- modal -->
+
+        <div class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <div class="p-modal__text js-modal-close">
+                    <ul>
+                        <li><a href="#1">Concept</a></li>
+                        <li><a href="#2">Works</a></li>
+                        <li><a href="#3">Florist</a></li>
+                        <li><a href="#4">Shop information</a></li>
+                        <li><a href="#5">Contact us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--modal__inner-->
+        </div>
+        <!--modal-->
+
     </header>
 
 
@@ -45,7 +68,7 @@
         <div class="c-background__color "></div>
         <div class="p-main__container">
             <section class="p-section">
-                <h1>Concept</h1>
+                <h1 id="1">Concept</h1>
                 <p>私たちShiroは、白いお花だけを取り扱うフラワーショップです。色とりどりの花束も素敵だけれど、洗練された「白」の美しさを感じてほしい。「白」に対する愛から生まれた静寂な時間が流れる店へ、ぜひお越しください。</p>
                 <img class="c-image__concept " src="assets/img/concept.jpg " alt="花瓶に入った白い花束 ">
 

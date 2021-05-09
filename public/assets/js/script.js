@@ -50,13 +50,13 @@ $(function() {
 
 // スクロールからのheader固定
 $(function() {
-    var blackHeader = $('.l-header');
+    var blackHeader = $('.l-header2');
     //スクロールが100に達したらヘッダ色変更
     $(window).scroll(function() {
         if ($(this).scrollTop() > 650) {
-            blackHeader.css('background-color', '#a9a9a9');
+            blackHeader.fadeIn("slow");
         } else {
-            blackHeader.css('background-color', 'transparent');
+            blackHeader.fadeOut("slow");
         }
     });
 });

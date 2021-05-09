@@ -27,12 +27,13 @@ $(function() {
         return false; //<a>を無効化
     });
 });
+
 // スムーススクロール
 $(function() {
     // #で始まるa要素をクリックした場合に処理
     $('a[href^="#"]').click(function() {
         // 移動先を0px調整する。0を30にすると30px下にずらすことができる。
-        var adjust = 0;
+        var adjust = -150;
         // スクロールの速度（ミリ秒）
         var speed = 400;
         // アンカーの値取得 リンク先（href）を取得して、hrefという変数に代入
@@ -46,10 +47,26 @@ $(function() {
         return false;
     });
 });
-$(window).on('scroll', function() {
-    if (400 < $(this).scrollTop()) {
-        $('.header').addClass('change-color');
-         } else {
-            $('.header').removeClass('change-color');
-             }
+
+// スクロールからのheader固定
+$(function() {
+    var blackHeader = $('.l-header');
+    //スクロールが100に達したらヘッダ色変更
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 650) {
+            blackHeader.css('background-color', '#a9a9a9');
+        } else {
+            blackHeader.css('background-color', 'transparent');
+        }
+    });
+});
+
+// トップページ戻るボタン
+$(window).scroll(function() {
+    var now = $(window).scrollTop();
+    if (now > 200) {
+        $('.pagetop').fadeIn("slow");
+    } else {
+        $('.pagetop').fadeOut('slow');
+    }
 });

@@ -53,3 +53,9 @@
         width: 100%;
         height: 33rem;
     }
+    
+    @media(min-width: 1280px) {
+        .c-image__headerLogo {
+            margin-left: 16rem;
+        }
+    }

@@ -365,6 +365,9 @@ article p {
     height: 41.5rem;
     width: 100rem;
   }
+  .c-image__gift {
+    margin-top: 7rem;
+  }
 }
 
 .c-button {
@@ -628,6 +631,21 @@ article p {
 
 .p-article__foryourself {
   text-align: right;
+}
+
+@media (min-width: 1280px) {
+  .p-articleWrapper__works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .p-articleWrapper__works article {
+    width: 50%;
+  }
 }
 
 .p-ul__access {

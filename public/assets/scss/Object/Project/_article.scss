@@ -5,3 +5,14 @@
 .p-article__foryourself {
     text-align: right;
 }
+
+@media(min-width: 1280px) {
+    .p-articleWrapper__works {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        article {
+            width: 50%;
+        }
+    }
+}

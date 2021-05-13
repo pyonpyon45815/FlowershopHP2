@@ -71,3 +71,13 @@ article {
         width: 58.5rem;
     }
 }
+
+@media(min-width: 1280px) {
+    p {
+        height: 7.9rem;
+        font-size: 1.6rem;
+        line-height: 1.96;
+        letter-spacing: 1.28px;
+        text-align: center;
+    }
+}

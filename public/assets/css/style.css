@@ -178,6 +178,8 @@ html {
 
 body {
   font-family: ‘Poppins’, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1 {
@@ -379,6 +381,9 @@ article p {
     width: 41.8rem;
     height: 63rem;
   }
+  .c-image__florist {
+    height: 38.8rem;
+  }
 }
 
 .c-button {
@@ -485,6 +490,9 @@ article p {
     width: 41.8rem;
     text-align: left;
   }
+  .c-p__floristText {
+    text-align-last: left;
+  }
 }
 
 .c-background__color {
@@ -505,6 +513,17 @@ article p {
   z-index: -1;
   right: 0;
   left: 0;
+}
+
+@media (min-width: 1280px) {
+  .c-background__colorTwo {
+    background-color: #f3f3f3;
+    height: 60rem;
+    top: 310rem;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 }
 
 .c-h1__Works {
@@ -645,6 +664,12 @@ article p {
   text-align: center;
 }
 
+@media (min-width: 1280px) {
+  .p-section__florist {
+    margin: 0;
+  }
+}
+
 .p-article__decoration {
   text-align: right;
 }
@@ -678,6 +703,18 @@ article p {
   .p-articleWrapper__works .p-article__wedding {
     margin-top: -38rem;
     margin-right: 12rem;
+  }
+  .p-articleWrapper__florist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 110rem;
+    margin: 0 auto;
+  }
+  .p-articleWrapper__florist .p-article__florist {
+    width: 30.5rem;
   }
 }
 

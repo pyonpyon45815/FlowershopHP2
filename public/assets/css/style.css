@@ -254,6 +254,9 @@ article p {
     letter-spacing: 1.28px;
     text-align: center;
   }
+  h2 {
+    margin-top: 4.5rem;
+  }
 }
 
 .l-header {
@@ -368,6 +371,14 @@ article p {
   .c-image__gift {
     margin-top: 7rem;
   }
+  .c-image__works {
+    width: 41.8rem;
+    height: 41.8rem;
+  }
+  .c-image__works2 {
+    width: 41.8rem;
+    height: 63rem;
+  }
 }
 
 .c-button {
@@ -470,6 +481,10 @@ article p {
     display: block;
     margin: 0 auto;
   }
+  .c-p__worksText2 {
+    width: 41.8rem;
+    text-align: left;
+  }
 }
 
 .c-background__color {
@@ -522,6 +537,11 @@ article p {
   .c-h1__Works {
     margin-top: 12rem;
     margin-bottom: 10rem;
+  }
+  .c-h2__foryourself {
+    margin-right: 0;
+    display: block;
+    text-align: left;
   }
 }
 
@@ -642,9 +662,22 @@ article p {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
   }
   .p-articleWrapper__works article {
-    width: 50%;
+    width: 40%;
+  }
+  .p-articleWrapper__works .p-article__works {
+    margin-right: 12rem;
+    margin-top: 7rem;
+  }
+  .p-articleWrapper__works .p-article__decoration {
+    margin-top: 20rem;
+  }
+  .p-articleWrapper__works .p-article__wedding {
+    margin-top: -38rem;
+    margin-right: 12rem;
   }
 }
 

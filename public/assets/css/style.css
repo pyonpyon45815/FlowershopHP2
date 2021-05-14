@@ -351,6 +351,10 @@ article p {
   height: 58.5rem;
 }
 
+.c-image__PCforyourself {
+  display: none;
+}
+
 .c-image__florist {
   width: 100%;
   height: 43rem;
@@ -383,6 +387,12 @@ article p {
   }
   .c-image__florist {
     height: 38.8rem;
+  }
+  .c-image__PCforyourself {
+    display: block;
+  }
+  .c-image__foryourself {
+    display: none;
   }
 }
 

@@ -783,8 +783,9 @@ article p {
   }
   .p-section__contact {
     background-image: url(../../assets/img/pc-contact.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
   }
   .p-section__contact {
     height: 42rem;
@@ -900,6 +901,15 @@ article p {
   color: #ffffff;
   text-decoration: none;
   font-size: 3rem;
+}
+
+@media (min-width: 1280px) {
+  .p-section__contact {
+    height: 32.8125vw;
+  }
+  .p-section__contact {
+    height: 32.8125vw;
+  }
 }
 
 .u-visuallyHidden {

@@ -20,8 +20,9 @@
      }
      .p-section__contact {
          background-image: url(../../assets/img/pc-contact.jpg );
-         background-size: contain;
+         background-size: cover;
          background-repeat: no-repeat;
+         width: 100%;
      }
      .p-section__contact {
          height: 42rem;

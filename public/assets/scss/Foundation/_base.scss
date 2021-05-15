@@ -74,14 +74,25 @@ article {
 }
 
 @media(min-width: 1280px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h1:before {
+        bottom: -33px;
+        /*線の上下位置*/
+    }
     p {
-        height: 7.9rem;
         font-size: 1.6rem;
         line-height: 1.96;
         letter-spacing: 1.28px;
         text-align: center;
+        margin-top: 0;
     }
     h2 {
         margin-top: 4.5rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+        width: 10rem;
     }
 }

@@ -1,3 +1,9 @@
-.p-ul__access {
-    margin-top: 4rem;
-}
+    .p-ul__access {
+        margin-top: 4rem;
+    }
+    
+    @media(min-width: 1280px) {
+        .p-ul__access {
+            margin-left: 4rem;
+        }
+    }

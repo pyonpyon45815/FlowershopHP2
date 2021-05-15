@@ -249,15 +249,26 @@ article p {
 }
 
 @media (min-width: 1280px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h1:before {
+    bottom: -33px;
+    /*線の上下位置*/
+  }
   p {
-    height: 7.9rem;
     font-size: 1.6rem;
     line-height: 1.96;
     letter-spacing: 1.28px;
     text-align: center;
+    margin-top: 0;
   }
   h2 {
     margin-top: 4.5rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+    width: 10rem;
   }
 }
 
@@ -360,9 +371,17 @@ article p {
   height: 43rem;
 }
 
+.c-image__pcflorist {
+  display: none;
+}
+
 .c-image__information {
   width: 100%;
   height: 33rem;
+}
+
+.c-image__pcinformation {
+  display: none;
 }
 
 @media (min-width: 1280px) {
@@ -393,6 +412,19 @@ article p {
   }
   .c-image__foryourself {
     display: none;
+  }
+  .c-image__pcflorist {
+    display: block;
+  }
+  .c-image__florist {
+    display: none;
+  }
+  .c-image__information {
+    display: none;
+  }
+  .c-image__pcinformation {
+    display: block;
+    height: 33rem;
   }
 }
 
@@ -499,9 +531,23 @@ article p {
   .c-p__worksText2 {
     width: 41.8rem;
     text-align: left;
+    margin-top: 1rem;
+  }
+  .c-p__floristTitletext {
+    margin-bottom: 7rem;
   }
   .c-p__floristText {
     text-align-last: left;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: justify;
+  }
+  .c-p__informationTitletext {
+    margin-bottom: 7rem;
+  }
+  .c-p__accessText {
+    text-align-last: left;
+    padding: 0;
   }
 }
 
@@ -529,7 +575,7 @@ article p {
   .c-background__colorTwo {
     background-color: #f3f3f3;
     height: 60rem;
-    top: 310rem;
+    top: 295rem;
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -565,12 +611,18 @@ article p {
   }
   .c-h1__Works {
     margin-top: 12rem;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
   }
   .c-h2__foryourself {
     margin-right: 0;
     display: block;
     text-align: left;
+  }
+  .c-h2__florist {
+    margin-top: 3rem;
+  }
+  .c-title__information {
+    margin-top: 3.5rem;
   }
 }
 
@@ -658,6 +710,17 @@ article p {
   margin: 0 3.1rem;
 }
 
+@media (min-width: 1280px) {
+  .p-container__shopInformation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100rem;
+    margin: 0 auto;
+    height: 33rem;
+  }
+}
+
 .p-section__concept {
   text-align: center;
 }
@@ -720,7 +783,7 @@ article p {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 110rem;
+    width: 100rem;
     margin: 0 auto;
   }
   .p-articleWrapper__florist .p-article__florist {
@@ -730,6 +793,12 @@ article p {
 
 .p-ul__access {
   margin-top: 4rem;
+}
+
+@media (min-width: 1280px) {
+  .p-ul__access {
+    margin-left: 4rem;
+  }
 }
 
 .p-li__access {

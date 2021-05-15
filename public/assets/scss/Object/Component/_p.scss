@@ -52,8 +52,22 @@
     .c-p__worksText2 {
         width: 41.8rem;
         text-align: left;
+        margin-top: 1rem;
+    }
+    .c-p__floristTitletext {
+        margin-bottom: 7rem;
     }
     .c-p__floristText {
         text-align-last: left;
+        margin-top: 2rem;
+        width: 100%;
+        text-align: justify;
+    }
+    .c-p__informationTitletext {
+        margin-bottom: 7rem;
+    }
+    .c-p__accessText {
+        text-align-last: left;
+        padding: 0;
     }
 }

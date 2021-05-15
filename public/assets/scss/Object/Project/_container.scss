@@ -1,12 +1,13 @@
-        .p-main__container {
-            margin: 0 3.1rem;
-        }
-        
-        @media(min-width: 1280px) {
-            .p-container__shopInformation {
-                display: flex;
-                width: 95rem;
-                margin: 0 auto;
-                height: 33rem;
-            }
-        }
+.p-main__container {
+    margin: 0 auto;
+    max-width: 128rem;
+}
+
+@media(min-width: 1280px) {
+    .p-container__shopInformation {
+        display: flex;
+        width: 95rem;
+        margin: 0 auto;
+        height: 33rem;
+    }
+}

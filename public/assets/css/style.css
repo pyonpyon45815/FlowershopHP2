@@ -309,12 +309,19 @@ article p {
 
 .l-main {
   position: relative;
+  padding: 0 3.1rem;
 }
 
 .l-footer {
   background-color: #f3f3f3;
   height: 14.5rem;
   text-align: center;
+}
+
+@media (min-width: 1280px) {
+  .l-footer {
+    height: 10rem;
+  }
 }
 
 .c-image__headerLogo {
@@ -478,6 +485,14 @@ article p {
   line-height: 50px;
 }
 
+@media (min-width: 1280px) {
+  .c-button__contact {
+    margin-top: 4.5rem;
+    width: 35.2rem;
+    height: 8.2rem;
+  }
+}
+
 .c-p__heroText {
   color: #ffffff;
   letter-spacing: 0.96px;
@@ -556,6 +571,10 @@ article p {
   .c-p__access4 {
     width: 25rem;
   }
+  .c-p__contactText {
+    display: block;
+    margin-top: 6rem;
+  }
 }
 
 .c-background__color {
@@ -630,12 +649,23 @@ article p {
   .c-title__information {
     margin-top: 3.5rem;
   }
+  .c-title__contact {
+    margin: 18rem 0 0 0;
+    padding-top: 8rem;
+  }
 }
 
 .c-small__footer {
   font-size: 2.2rem;
   line-height: 14.5rem;
   letter-spacing: 1.76px;
+}
+
+@media (min-width: 1280px) {
+  .c-small__footer {
+    font-size: 1.6rem;
+    line-height: 10rem;
+  }
 }
 
 .p-hamburger {
@@ -713,7 +743,8 @@ article p {
 }
 
 .p-main__container {
-  margin: 0 3.1rem;
+  margin: 0 auto;
+  max-width: 128rem;
 }
 
 @media (min-width: 1280px) {
@@ -746,6 +777,14 @@ article p {
 @media (min-width: 1280px) {
   .p-section__florist {
     margin: 0;
+  }
+  .p-section__contact {
+    background-image: url(../../assets/img/pc-contact.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .p-section__contact {
+    height: 42rem;
   }
 }
 

@@ -1,8 +1,11 @@
- @media(min-width: 1280px) {
-     .p-section__contact {
-         height: 32.8125vw;
-     }
-     .p-section__contact {
-         height: 32.8125vw;
-     }
- }
+    // vh自動計算式
+    $viewport: 1280; // 基準となるビューポート
+    @function pxtovw($num, $width: $viewport) {
+        @return (1vw * $num / $width * 100);
+    }
+    
+    @media(min-width: 1280px) {
+        .p-section__contact {
+            height: pxtovw(420);
+        }
+    }

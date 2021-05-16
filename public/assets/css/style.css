@@ -547,7 +547,7 @@ article p {
     margin: 0 auto;
   }
   .c-p__worksText2 {
-    width: 41.8rem;
+    display: inline;
     text-align: left;
     margin-top: 1rem;
   }
@@ -754,6 +754,9 @@ article p {
 }
 
 @media (min-width: 1280px) {
+  .p-main__container {
+    padding: 0;
+  }
   .p-container__shopInformation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -813,24 +816,27 @@ article p {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 auto;
-  }
-  .p-articleWrapper__works article {
-    width: 40%;
   }
   .p-articleWrapper__works .p-article__works {
     margin-right: 12rem;
     margin-top: 7rem;
+    width: 41.8rem;
   }
   .p-articleWrapper__works .p-article__decoration {
     margin-top: 20rem;
+    width: 41.8rem;
   }
   .p-articleWrapper__works .p-article__wedding {
     margin-top: -38rem;
     margin-right: 12rem;
+    width: 41.8rem;
+  }
+  .p-articleWrapper__works .p-article__foryourself {
+    width: 41.8rem;
   }
   .p-articleWrapper__florist {
     display: -webkit-box;
@@ -913,6 +919,16 @@ article p {
   .l-hero {
     height: 94.66667vw;
   }
+  .c-image__heroLogo {
+    width: 42.26667vw;
+    height: 17.2vw;
+    margin-top: 30vw;
+  }
+  .c-p__heroText {
+    font-size: 3.2vw;
+    letter-spacing: 0.128vw;
+    margin-top: 6.66667vw;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -924,6 +940,10 @@ article p {
     height: 10.07812vw;
     margin-top: 17.57812vw;
   }
+  p {
+    font-size: 1.25vw;
+    letter-spacing: 0.1vw;
+  }
   .c-p__heroText {
     font-size: 1.71875vw;
     letter-spacing: 0.06875vw;
@@ -931,6 +951,35 @@ article p {
   }
   .p-section__contact {
     height: 32.8125vw;
+  }
+  h1 {
+    font-size: 3.125vw;
+    margin-bottom: 4.6875vw;
+  }
+  h1:before {
+    bottom: -2.57812vw;
+    /*線の上下位置*/
+  }
+  .c-p__conceptText {
+    width: 47.73438vw;
+  }
+  .c-image__concept {
+    margin-top: 5.46875vw;
+    height: 32.42188vw;
+    width: 78.125vw;
+    max-width: 128rem;
+    max-height: 53.5rem;
+  }
+  .p-articleWrapper__works {
+    width: 80vw;
+    max-width: 128rem;
+    margin: 0 auto;
+  }
+  .c-p__worksText {
+    width: 38.125vw;
+  }
+  .c-h2__foryourself {
+    font-size: calc(46px + ((1vw - 12.8px)*4.375));
   }
 }
 

@@ -10,22 +10,24 @@
     .p-articleWrapper__works {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        width: 80%;
+        justify-content: space-between;
         margin: 0 auto;
-        article {
-            width: 40%;
-        }
         .p-article__works {
             margin-right: 12rem;
             margin-top: 7rem;
+            width: 41.8rem;
         }
         .p-article__decoration {
             margin-top: 20rem;
+            width: 41.8rem;
         }
         .p-article__wedding {
             margin-top: -38rem;
             margin-right: 12rem;
+            width: 41.8rem;
+        }
+        .p-article__foryourself {
+            width: 41.8rem;
         }
     }
     .p-articleWrapper__florist {

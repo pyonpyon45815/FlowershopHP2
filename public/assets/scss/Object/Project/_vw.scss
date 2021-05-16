@@ -1,35 +1,78 @@
-        // vh自動計算式
-        $viewport1280: 1280; // 基準となるビューポート1280px時
-        $viewport750: 750; // 基準となるビューポート750px時
-        @function pxtovw1280($num, $width: $viewport1280) {
-            @return (1vw * $num / $width * 100);
+    // vh自動計算式
+    $viewport1280: 1280; // 基準となるビューポート1280px時
+    $viewport750: 750; // 基準となるビューポート750px時
+    @function pxtovw1280($num, $width: $viewport1280) {
+        @return (1vw * $num / $width * 100);
+    }
+    
+    @function pxtovw750($num, $width: $viewport750) {
+        @return (1vw * $num / $width * 100);
+    }
+    
+    @media(min-width: 750px) {
+        .l-hero {
+            height: pxtovw750(710);
         }
-        
-        @function pxtovw750($num, $width: $viewport750) {
-            @return (1vw * $num / $width * 100);
+        .c-image__heroLogo {
+            width: pxtovw750(317);
+            height: pxtovw750(129);
+            margin-top: pxtovw750(225);
         }
-        
-        @media(min-width: 750px) {
-            .l-hero {
-                height: pxtovw750(710);
-            }
+        .c-p__heroText {
+            font-size: pxtovw750(24);
+            letter-spacing: pxtovw750(0.96);
+            margin-top: pxtovw750(50);
         }
-        
-        @media(min-width: 1280px) {
-            .l-hero {
-                height: pxtovw1280(620);
-            }
-            .c-image__heroLogo {
-                width: pxtovw1280(317);
-                height: pxtovw1280(129);
-                margin-top: pxtovw1280(225);
-            }
-            .c-p__heroText {
-                font-size: pxtovw1280(22);
-                letter-spacing: pxtovw1280(0.88);
-                margin-top: pxtovw1280(50);
-            }
-            .p-section__contact {
-                height: pxtovw1280(420);
-            }
+    }
+    
+    @media(min-width: 1280px) {
+        .l-hero {
+            height: pxtovw1280(620);
         }
+        .c-image__heroLogo {
+            width: pxtovw1280(317);
+            height: pxtovw1280(129);
+            margin-top: pxtovw1280(225);
+        }
+        p {
+            font-size: pxtovw1280(16);
+            letter-spacing: pxtovw1280(1.28);
+        }
+        .c-p__heroText {
+            font-size: pxtovw1280(22);
+            letter-spacing: pxtovw1280(0.88);
+            margin-top: pxtovw1280(50);
+        }
+        .p-section__contact {
+            height: pxtovw1280(420);
+        }
+        h1 {
+            font-size: pxtovw1280(40);
+            margin-bottom: pxtovw1280(60);
+        }
+        h1:before {
+            bottom: pxtovw1280(-33);
+            /*線の上下位置*/
+        }
+        .c-p__conceptText {
+            width: pxtovw1280(611);
+        }
+        .c-image__concept {
+            margin-top: pxtovw1280(70);
+            height: pxtovw1280(415);
+            width: pxtovw1280(1000);
+            max-width: 128rem;
+            max-height: 53.5rem;
+        }
+        .p-articleWrapper__works {
+            width: pxtovw1280(1024);
+            max-width: 128rem;
+            margin: 0 auto;
+        }
+        .c-p__worksText {
+            width: pxtovw1280(488);
+        }
+        .c-h2__foryourself {
+            font-size: calc(46px + ((1vw - 12.8px)*4.375));
+        }
+    }

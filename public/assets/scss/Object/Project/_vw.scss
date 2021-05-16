@@ -1,24 +1,35 @@
         // vh自動計算式
-        $viewport: 1280; // 基準となるビューポート
-        @function pxtovw($num, $width: $viewport) {
+        $viewport1280: 1280; // 基準となるビューポート1280px時
+        $viewport750: 750; // 基準となるビューポート750px時
+        @function pxtovw1280($num, $width: $viewport1280) {
             @return (1vw * $num / $width * 100);
+        }
+        
+        @function pxtovw750($num, $width: $viewport750) {
+            @return (1vw * $num / $width * 100);
+        }
+        
+        @media(min-width: 750px) {
+            .l-hero {
+                height: pxtovw750(710);
+            }
         }
         
         @media(min-width: 1280px) {
             .l-hero {
-                height: pxtovw(620);
+                height: pxtovw1280(620);
             }
             .c-image__heroLogo {
-                width: pxtovw(317);
-                height: pxtovw(129);
-                margin-top: pxtovw(225);
+                width: pxtovw1280(317);
+                height: pxtovw1280(129);
+                margin-top: pxtovw1280(225);
             }
             .c-p__heroText {
-                font-size: pxtovw(22);
-                letter-spacing: pxtovw(0.88);
-                margin-top: pxtovw(50);
+                font-size: pxtovw1280(22);
+                letter-spacing: pxtovw1280(0.88);
+                margin-top: pxtovw1280(50);
             }
             .p-section__contact {
-                height: pxtovw(420);
+                height: pxtovw1280(420);
             }
         }

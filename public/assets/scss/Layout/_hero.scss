@@ -1,8 +1,17 @@
-    .l-hero {
-        background: url("../../assets/img/top.jpg");
-        width: 100%;
-        height: auto;
-        min-height: 71rem;
-        background-size: cover;
-        text-align: center;
-    }
+        .l-hero {
+            background: url("../../assets/img/top.jpg");
+            width: 100%;
+            height: auto;
+            min-height: 71rem;
+            background-size: cover;
+            text-align: center;
+        }
+        
+        @media(min-width: 1280px) {
+            .l-hero {
+                background: url("../../assets/img/pc-top.jpg");
+                background-size: cover;
+                height: auto;
+                min-height: 62rem;
+            }
+        }

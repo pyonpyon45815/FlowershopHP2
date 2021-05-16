@@ -301,12 +301,6 @@ article p {
   text-align: center;
 }
 
-@media (min-width: 1280px) {
-  .l-hero {
-    min-height: 61rem;
-  }
-}
-
 .l-main {
   position: relative;
 }
@@ -907,6 +901,19 @@ article p {
 }
 
 @media (min-width: 1280px) {
+  .l-hero {
+    height: 48.4375vw;
+  }
+  .c-image__heroLogo {
+    width: 24.76562vw;
+    height: 10.07812vw;
+    margin-top: 17.57812vw;
+  }
+  .c-p__heroText {
+    font-size: 1.71875vw;
+    letter-spacing: 0.06875vw;
+    margin-top: 3.90625vw;
+  }
   .p-section__contact {
     height: 32.8125vw;
   }

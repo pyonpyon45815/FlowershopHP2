@@ -1,24 +1,24 @@
-    // vh自動計算式
-    $viewport: 1280; // 基準となるビューポート
-    @function pxtovw($num, $width: $viewport) {
-        @return (1vw * $num / $width * 100);
-    }
-    
-    @media(min-width: 1280px) {
-        .l-hero {
-            height: pxtovw(620);
+        // vh自動計算式
+        $viewport: 1280; // 基準となるビューポート
+        @function pxtovw($num, $width: $viewport) {
+            @return (1vw * $num / $width * 100);
         }
-        .c-image__heroLogo {
-            width: pxtovw(317);
-            height: pxtovw(129);
-            margin-top: pxtovw(225);
+        
+        @media(min-width: 1280px) {
+            .l-hero {
+                height: pxtovw(620);
+            }
+            .c-image__heroLogo {
+                width: pxtovw(317);
+                height: pxtovw(129);
+                margin-top: pxtovw(225);
+            }
+            .c-p__heroText {
+                font-size: pxtovw(22);
+                letter-spacing: pxtovw(0.88);
+                margin-top: pxtovw(50);
+            }
+            .p-section__contact {
+                height: pxtovw(420);
+            }
         }
-        .c-p__heroText {
-            font-size: pxtovw(22);
-            letter-spacing: pxtovw(0.88);
-            margin-top: pxtovw(50);
-        }
-        .p-section__contact {
-            height: pxtovw(420);
-        }
-    }

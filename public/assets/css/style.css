@@ -976,6 +976,10 @@ article p {
     max-width: 128rem;
     max-height: 53.5rem;
   }
+  .c-background__color {
+    height: 16.40625vw;
+    top: 44.53125vw;
+  }
   .p-articleWrapper__works {
     width: 80vw;
     max-width: 128rem;
@@ -984,20 +988,28 @@ article p {
   .c-p__worksText {
     width: 38.125vw;
   }
+  .p-article__works {
+    margin-right: 9.375vw;
+    margin-top: 5.46875vw;
+    width: 32.65625vw;
+  }
 }
 
-@media (min-width: 1280px) and (max-width: 1600px) {
+@media (min-width: 1280px) and (min-width: 1280px) and (max-width: 1600px) {
   h2 {
     font-size: calc(46px + ((1vw - 12.8px)*4.375));
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1280px) and (min-width: 1600px) {
   h2 {
     font-size: 6rem;
   }
   p {
     font-size: 3rem;
+  }
+  .c-background__color {
+    top: 83rem;
   }
 }
 

@@ -618,8 +618,8 @@ article p {
 }
 
 .c-h2__decoration {
-  display: inline-block;
   margin-right: 31.5rem;
+  display: inline-block;
 }
 
 .c-h2__foryourself {
@@ -642,6 +642,10 @@ article p {
   }
   .c-h1__Works {
     margin-top: 12rem;
+  }
+  .c-h2__decoration {
+    margin-right: 0;
+    display: block;
   }
   .c-h2__foryourself {
     margin-right: 0;
@@ -749,13 +753,13 @@ article p {
 
 .p-main__container {
   max-width: 128rem;
-  margin: 0 auto;
   padding: 0 3.1rem;
 }
 
 @media (min-width: 1280px) {
   .p-main__container {
     padding: 0;
+    margin: 0 auto;
   }
   .p-container__shopInformation {
     display: -webkit-box;
@@ -829,6 +833,7 @@ article p {
   .p-articleWrapper__works .p-article__decoration {
     margin-top: 20rem;
     width: 41.8rem;
+    text-align: left;
   }
   .p-articleWrapper__works .p-article__wedding {
     margin-top: -38rem;
@@ -837,6 +842,7 @@ article p {
   }
   .p-articleWrapper__works .p-article__foryourself {
     width: 41.8rem;
+    text-align: left;
   }
   .p-articleWrapper__florist {
     display: -webkit-box;
@@ -978,8 +984,20 @@ article p {
   .c-p__worksText {
     width: 38.125vw;
   }
-  .c-h2__foryourself {
+}
+
+@media (min-width: 1280px) and (max-width: 1600px) {
+  h2 {
     font-size: calc(46px + ((1vw - 12.8px)*4.375));
+  }
+}
+
+@media (min-width: 1600px) {
+  h2 {
+    font-size: 6rem;
+  }
+  p {
+    font-size: 3rem;
   }
 }
 

@@ -1,6 +1,11 @@
     // vh自動計算式
+    $viewport1280: 1600; // 基準となるビューポート1600px時
     $viewport1280: 1280; // 基準となるビューポート1280px時
     $viewport750: 750; // 基準となるビューポート750px時
+    @function pxtovw1600($num, $width: $viewport1600) {
+        @return (1vw * $num / $width * 100);
+    }
+    
     @function pxtovw1280($num, $width: $viewport1280) {
         @return (1vw * $num / $width * 100);
     }
@@ -72,7 +77,19 @@
         .c-p__worksText {
             width: pxtovw1280(488);
         }
-        .c-h2__foryourself {
+    }
+    
+    @media (min-width: 1280px) and (max-width: 1600px) {
+        h2 {
             font-size: calc(46px + ((1vw - 12.8px)*4.375));
+        }
+    }
+    
+    @media(min-width:1600px) {
+        h2 {
+            font-size: 6rem;
+        }
+        p {
+            font-size: 3rem;
         }
     }

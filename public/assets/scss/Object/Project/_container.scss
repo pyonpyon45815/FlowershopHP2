@@ -1,17 +1,17 @@
-    .p-main__container {
-        max-width: 128rem;
-        margin: 0 auto;
-        padding: 0 3.1rem;
-    }
-    
-    @media(min-width: 1280px) {
-        .p-main__container {
-            padding: 0;
-        }
-        .p-container__shopInformation {
-            display: flex;
-            width: 95rem;
-            margin: 0 auto;
-            height: 33rem;
-        }
-    }
+ .p-main__container {
+     max-width: 128rem;
+     padding: 0 3.1rem;
+ }
+ 
+ @media(min-width: 1280px) {
+     .p-main__container {
+         padding: 0;
+         margin: 0 auto;
+     }
+     .p-container__shopInformation {
+         display: flex;
+         width: 95rem;
+         margin: 0 auto;
+         height: 33rem;
+     }
+ }

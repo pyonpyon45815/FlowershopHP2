@@ -3,8 +3,8 @@
 }
 
 .c-h2__decoration {
-    display: inline-block;
     margin-right: 31.5rem;
+    display: inline-block;
 }
 
 .c-h2__foryourself {
@@ -27,6 +27,10 @@
     }
     .c-h1__Works {
         margin-top: 12rem;
+    }
+    .c-h2__decoration {
+        margin-right: 0;
+        display: block;
     }
     .c-h2__foryourself {
         margin-right: 0;

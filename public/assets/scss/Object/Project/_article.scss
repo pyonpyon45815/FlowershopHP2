@@ -42,3 +42,13 @@
         }
     }
 }
+
+@media(min-width: 1600px) {
+    .p-articleWrapper__florist {
+        margin: 0;
+        width: 100%;
+        .p-article__florist {
+            width: 40rem;
+        }
+    }
+}

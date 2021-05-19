@@ -772,6 +772,14 @@ article p {
   }
 }
 
+@media (min-width: 1600px) {
+  .p-main__container {
+    width: 100%;
+    max-width: 150rem;
+    margin: 0 auto;
+  }
+}
+
 .p-section__concept {
   text-align: center;
 }
@@ -1020,6 +1028,9 @@ article p {
     font-size: 1.25vw;
     width: 7.8125vw;
   }
+  .l-footer {
+    height: 7.8125vw;
+  }
   .c-small__footer {
     font-size: 1.25vw;
     line-height: 7.8125vw;
@@ -1035,8 +1046,12 @@ article p {
     margin-right: 1.5625vw;
   }
   .pagetop a {
-    width: 50px;
-    height: 50px;
+    width: 3.90625vw;
+    height: 3.90625vw;
+  }
+  .pagetop a i {
+    font-size: 1.5625vw;
+    line-height: 3.90625vw;
   }
 }
 

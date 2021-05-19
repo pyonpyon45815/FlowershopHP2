@@ -1,54 +1,54 @@
-.p-article__decoration {
-    text-align: right;
-}
-
-.p-article__foryourself {
-    text-align: right;
-}
-
-@media(min-width: 1280px) {
-    .p-articleWrapper__works {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0 auto;
-        .p-article__works {
-            margin-right: 12rem;
-            margin-top: 7rem;
-            width: 41.8rem;
-        }
         .p-article__decoration {
-            margin-top: 20rem;
-            width: 41.8rem;
-            text-align: left;
+            text-align: right;
         }
-        .p-article__wedding {
-            margin-top: -38rem;
-            margin-right: 12rem;
-            width: 41.8rem;
-        }
+        
         .p-article__foryourself {
-            width: 41.8rem;
-            text-align: left;
+            text-align: right;
         }
-    }
-    .p-articleWrapper__florist {
-        display: flex;
-        justify-content: space-around;
-        width: 100rem;
-        margin: 0 auto;
-        .p-article__florist {
-            width: 30.5rem;
+        
+        @media(min-width: 1280px) {
+            .p-articleWrapper__works {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 0 auto;
+                .p-article__works {
+                    margin-right: 12rem;
+                    margin-top: 7rem;
+                    width: 41.8rem;
+                }
+                .p-article__decoration {
+                    margin-top: 20rem;
+                    width: 41.8rem;
+                    text-align: left;
+                }
+                .p-article__wedding {
+                    margin-top: -38rem;
+                    margin-right: 12rem;
+                    width: 41.8rem;
+                }
+                .p-article__foryourself {
+                    width: 41.8rem;
+                    text-align: left;
+                }
+            }
+            .p-articleWrapper__florist {
+                display: flex;
+                justify-content: space-around;
+                width: 100rem;
+                margin: 0 auto;
+                .p-article__florist {
+                    width: 30.5rem;
+                }
+            }
         }
-    }
-}
-
-@media(min-width: 1600px) {
-    .p-articleWrapper__florist {
-        margin: 0;
-        width: 100%;
-        .p-article__florist {
-            width: 40rem;
+        
+        @media(min-width: 1600px) {
+            .p-articleWrapper__florist {
+                margin: 0;
+                width: 100%;
+                .p-article__florist {
+                    width: 40rem;
+                }
+            }
         }
-    }
-}

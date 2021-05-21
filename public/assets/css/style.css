@@ -394,6 +394,12 @@ article p {
   display: none;
 }
 
+@media (max-width: 749px) {
+  .c-image__works749 {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1280px) {
   .c-image__headerLogo {
     margin-left: 16rem;
@@ -539,6 +545,12 @@ article p {
   text-align: center;
 }
 
+@media (max-width: 749px) {
+  .c-p__worksText2 {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1280px) {
   .c-p__heroText {
     font-size: 2.2rem;
@@ -635,6 +647,13 @@ article p {
 .c-title__contact {
   margin-top: 8.5rem;
   padding-top: 15rem;
+}
+
+@media (max-width: 749px) {
+  .c-h2__decoration,
+  .c-h2__foryourself {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1013,9 +1032,6 @@ article p {
     margin-top: 5.46875vw;
     width: 32.65625vw;
   }
-  .c-background__colorTwo {
-    top: 230.46875vw;
-  }
   .p-container__shopInformation {
     width: 74.21875vw;
     margin: 0 auto;
@@ -1058,6 +1074,10 @@ article p {
 @media (min-width: 1280px) and (max-width: 1600px) {
   h2 {
     font-size: calc(46px + ((1vw - 12.8px)*4.375));
+  }
+  .c-background__colorTwo {
+    height: 60rem;
+    top: 295rem;
   }
 }
 

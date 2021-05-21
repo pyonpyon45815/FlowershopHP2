@@ -86,9 +86,6 @@ $viewport750: 750; // 基準となるビューポート750px時
         margin-top: pxtovw1280(70);
         width: pxtovw1280(418);
     }
-    .c-background__colorTwo {
-        top: pxtovw1280(2950);
-    }
     .p-container__shopInformation {
         width: pxtovw1280(950);
         margin: 0 auto;
@@ -131,6 +128,10 @@ $viewport750: 750; // 基準となるビューポート750px時
 @media (min-width: 1280px) and (max-width: 1600px) {
     h2 {
         font-size: calc(46px + ((1vw - 12.8px)*4.375));
+    }
+    .c-background__colorTwo {
+        height: 60rem;
+        top: 295rem;
     }
 }
 

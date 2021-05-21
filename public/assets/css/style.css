@@ -248,6 +248,12 @@ article p {
   width: 58.5rem;
 }
 
+@media (max-width: 749px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
 @media (min-width: 1280px) {
   h1 {
     font-size: 4rem;
@@ -398,6 +404,11 @@ article p {
   .c-image__works749 {
     width: 100%;
   }
+  .c-image__headerLogo {
+    width: 10rem;
+    height: 4rem;
+    margin: 2rem 2rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -471,6 +482,12 @@ article p {
   letter-spacing: 1.92px;
 }
 
+.c-button__contact:active {
+  width: 40rem;
+  height: 9rem;
+  font-size: 2.2rem;
+}
+
 .c-button__contact .far {
   margin-right: 2rem;
 }
@@ -497,6 +514,14 @@ article p {
   font-size: 20px;
   color: #fff;
   line-height: 50px;
+}
+
+@media (max-width: 749px) {
+  .c-button__contact {
+    width: 33rem;
+    height: 8rem;
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -763,6 +788,14 @@ article p {
 .p-hamburger[aria-expanded="true"] .p-hamburger__line::after {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+@media (max-width: 749px) {
+  .p-hamburger {
+    width: 5rem;
+    height: 20px;
+    margin: 3rem 2rem;
+  }
 }
 
 @media (min-width: 1280px) {

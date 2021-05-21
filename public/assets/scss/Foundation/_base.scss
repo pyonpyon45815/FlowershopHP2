@@ -1,99 +1,105 @@
-    // remの基本指定
-    html {
-        font-size: 62.5%;
-    }
-    
-    body {
-        font-family: ‘Poppins’, sans-serif;
-        box-sizing: border-box;
-    }
-    
-    h1 {
-        font-size: 6.2rem;
-        color: #2b2b2b;
-        font-weight: semibold;
-        letter-spacing: 1.24px;
-        text-align: center;
-        margin-top: 15.3rem;
-        // 下線部表示
-        position: relative;
-        margin-bottom: 1em;
-        &:before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: -53px;
-            /*線の上下位置*/
-            width: 60px;
-            /*線の長さ*/
-            height: 2px;
-            /*線の太さ*/
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-            /*位置調整*/
-            background-color: black;
-            /*線の色*/
-            border-radius: 2px;
-            /*線の丸み*/
+        // remの基本指定
+        html {
+            font-size: 62.5%;
         }
-    }
-    
-    p {
-        font-size: 2.4rem;
-        font-family: ‘Noto Sans JP’, sans-serif;
-        color: #000000;
-        font-weight: 300;
-        letter-spacing: 1.92px;
-        line-height: 1.75;
-        display: inline-block;
-        margin-top: 3.5rem;
-        text-align: justify;
-    }
-    
-    h2 {
-        font-size: 4.6rem;
-        color: #2b2b2b;
-        font-weight: semibold;
-        letter-spacing: 0.92px;
-        margin-top: 3.5rem;
-    }
-    
-    h3 {
-        font-size: 2.4rem;
-        color: #000000;
-        font-weight: normal;
-        letter-spacing: 1.92px;
-        width: 14.3rem;
-    }
-    
-    article {
-        margin-bottom: 13.5rem;
-        p {
-            width: 58.5rem;
+        
+        body {
+            font-family: ‘Poppins’, sans-serif;
+            box-sizing: border-box;
         }
-    }
-    
-    @media(min-width: 1280px) {
+        
         h1 {
-            font-size: 4rem;
-            margin-bottom: 6rem;
-        }
-        h1:before {
-            bottom: -33px;
-            /*線の上下位置*/
-        }
-        p {
-            font-size: 1.6rem;
-            line-height: 1.96;
-            letter-spacing: 1.28px;
+            font-size: 6.2rem;
+            color: #2b2b2b;
+            font-weight: semibold;
+            letter-spacing: 1.24px;
             text-align: center;
-            margin-top: 0;
+            margin-top: 15.3rem;
+            // 下線部表示
+            position: relative;
+            margin-bottom: 1em;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: -53px;
+                /*線の上下位置*/
+                width: 60px;
+                /*線の長さ*/
+                height: 2px;
+                /*線の太さ*/
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                /*位置調整*/
+                background-color: black;
+                /*線の色*/
+                border-radius: 2px;
+                /*線の丸み*/
+            }
         }
+        
+        p {
+            font-size: 2.4rem;
+            font-family: ‘Noto Sans JP’, sans-serif;
+            color: #000000;
+            font-weight: 300;
+            letter-spacing: 1.92px;
+            line-height: 1.75;
+            display: inline-block;
+            margin-top: 3.5rem;
+            text-align: justify;
+        }
+        
         h2 {
-            margin-top: 4.5rem;
+            font-size: 4.6rem;
+            color: #2b2b2b;
+            font-weight: semibold;
+            letter-spacing: 0.92px;
+            margin-top: 3.5rem;
         }
+        
         h3 {
-            font-size: 1.6rem;
-            width: 10rem;
+            font-size: 2.4rem;
+            color: #000000;
+            font-weight: normal;
+            letter-spacing: 1.92px;
+            width: 14.3rem;
         }
-    }
+        
+        article {
+            margin-bottom: 13.5rem;
+            p {
+                width: 58.5rem;
+            }
+        }
+        
+        @media(max-width: 749px) {
+            h1 {
+                font-size: 5rem;
+            }
+        }
+        
+        @media(min-width: 1280px) {
+            h1 {
+                font-size: 4rem;
+                margin-bottom: 6rem;
+            }
+            h1:before {
+                bottom: -33px;
+                /*線の上下位置*/
+            }
+            p {
+                font-size: 1.6rem;
+                line-height: 1.96;
+                letter-spacing: 1.28px;
+                text-align: center;
+                margin-top: 0;
+            }
+            h2 {
+                margin-top: 4.5rem;
+            }
+            h3 {
+                font-size: 1.6rem;
+                width: 10rem;
+            }
+        }

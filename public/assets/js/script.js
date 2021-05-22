@@ -33,7 +33,7 @@ $(function() {
     // #で始まるa要素をクリックした場合に処理
     $('a[href^="#"]').click(function() {
         // 移動先を0px調整する。0を30にすると30px下にずらすことができる。
-        var adjust = -150;
+        var adjust = -140;
         // スクロールの速度（ミリ秒）
         var speed = 400;
         // アンカーの値取得 リンク先（href）を取得して、hrefという変数に代入
@@ -47,6 +47,7 @@ $(function() {
         return false;
     });
 });
+
 
 // スクロールからのheader固定
 $(function() {

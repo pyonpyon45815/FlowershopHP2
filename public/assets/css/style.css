@@ -248,6 +248,12 @@ article p {
   width: 58.5rem;
 }
 
+.test-contact {
+  height: 0.1rem;
+  margin: 15.5rem;
+  position: absolute;
+}
+
 @media (max-width: 749px) {
   h1 {
     font-size: 5rem;

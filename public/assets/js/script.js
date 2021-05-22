@@ -3,6 +3,8 @@ $(function() {
     $('#js-buttonHamburger').click(function() {
         $('body').toggleClass('is-drawerActive');
 
+
+
         if ($(this).attr('aria-expanded') == 'false') {
             $(this).attr('aria-expanded', true);
         } else {
@@ -54,7 +56,7 @@ $(function() {
     var blackHeader = $('.l-header2');
     //スクロールが100に達したらヘッダ色変更
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 650) {
+        if ($(this).scrollTop() > 600) {
             blackHeader.fadeIn("slow");
         } else {
             blackHeader.fadeOut("slow");

@@ -53,16 +53,19 @@ $(function() {
 
 // スクロールからのheader固定
 $(function() {
-    var blackHeader = $('.l-header2');
+    var blackHeader = $('.l-header');
     //スクロールが100に達したらヘッダ色変更
     $(window).scroll(function() {
         if ($(this).scrollTop() > 600) {
-            blackHeader.fadeIn("slow");
+            blackHeader.addClass('active');
         } else {
-            blackHeader.fadeOut("slow");
+            blackHeader.removeClass('active');
         }
     });
 });
+// test header
+
+
 
 // トップページ戻るボタン
 $(window).scroll(function() {

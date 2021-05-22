@@ -297,14 +297,8 @@ article p {
   z-index: 1;
 }
 
-.l-header2 {
-  position: absolute;
-  background-color: #a9a9a9;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  z-index: 2;
-  display: none;
+.active {
+  background-color: #91c5af;
 }
 
 .l-hero {

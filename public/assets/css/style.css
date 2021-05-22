@@ -528,6 +528,11 @@ article p {
     height: 8rem;
     font-size: 2rem;
   }
+  .c-button__contact:active {
+    width: 31rem;
+    height: 7rem;
+    font-size: 1.8rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -535,6 +540,10 @@ article p {
     margin-top: 4.5rem;
     width: 35.2rem;
     height: 8.2rem;
+  }
+  .c-button__contact:active {
+    width: 34rem;
+    height: 7.8rem;
   }
 }
 

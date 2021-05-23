@@ -967,6 +967,7 @@ article p {
 @media (min-width: 1600px) {
   .p-articleWrapper__florist {
     margin: 0;
+    padding: 0;
     width: 100%;
   }
   .p-articleWrapper__florist .p-article__florist {

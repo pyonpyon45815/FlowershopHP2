@@ -999,6 +999,7 @@ article p {
 .fixed {
   position: fixed;
   left: 0;
+  right: 0;
 }
 
 .content {
@@ -1015,7 +1016,7 @@ article p {
 }
 
 .modal__bg {
-  background: black;
+  background: rgba(0, 0, 0, 0.6);
   height: 100vh;
   position: absolute;
   width: 100%;

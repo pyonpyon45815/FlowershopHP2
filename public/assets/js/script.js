@@ -63,7 +63,19 @@ $(function() {
         }
     });
 });
-// test header
+// スクロールヘッダー表示↔非表示
+var startPos = 0,
+    winScrollTop = 0;
+$(window).scroll(function() {
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop >= startPos) {
+        $('.l-header').addClass('hide');
+    } else {
+        $('.l-header').removeClass('hide');
+    }
+    startPos = winScrollTop;
+});
+
 
 
 

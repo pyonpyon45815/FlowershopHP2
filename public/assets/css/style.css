@@ -294,11 +294,19 @@ article p {
   width: 100%;
   height: auto;
   position: fixed;
-  z-index: 1;
+  z-index: 999;
+  top: 0;
+  -webkit-transition: .9s;
+  transition: .9s;
 }
 
 .active {
   background-color: #91c5af;
+}
+
+.l-header.hide {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .l-hero {

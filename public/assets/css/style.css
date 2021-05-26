@@ -1149,6 +1149,11 @@ article p {
     margin-top: 3.51562vw;
     letter-spacing: 0.15vw;
   }
+  .c-button__contact:active {
+    width: 25.78125vw;
+    height: 6.09375vw;
+    font-size: 1.71875vw;
+  }
   .far {
     margin-right: 1.5625vw;
   }

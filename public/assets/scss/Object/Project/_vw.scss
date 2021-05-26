@@ -111,6 +111,11 @@ $viewport750: 750; // 基準となるビューポート750px時
         font-size: pxtovw1280(24);
         margin-top: pxtovw1280(45);
         letter-spacing: pxtovw1280(1.92);
+        &:active {
+            width: pxtovw1280(330);
+            height: pxtovw1280(78);
+            font-size: pxtovw1280(22);
+        }
     }
     .far {
         margin-right: pxtovw1280(20);

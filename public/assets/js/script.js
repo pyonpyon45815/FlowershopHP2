@@ -88,3 +88,9 @@ $(window).scroll(function() {
         $('.pagetop').fadeOut('slow');
     }
 });
+// 横スライダー
+$('.slider').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+});

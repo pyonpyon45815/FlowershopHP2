@@ -17,9 +17,11 @@
         left: 0;
     }
     
-    @media(min-width: 1280px) {
+    @media(max-width: 1280px) {
         .c-background__colorTwo {
+            position: fixed;
             height: 60rem;
             top: 295rem;
+            background-color: red;
         }
     }

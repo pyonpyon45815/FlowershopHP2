@@ -89,9 +89,26 @@ $(window).scroll(function() {
     }
 });
 // 横スライダー
+
+
+function sliderSetting() {
+    var width = $(window).width();
+    if (width <= 1279) {
+        $('.slider').not('.slick-initialized').slick();
+    } else {
+        $('.slider.slick-initialized').slick('unslick');
+    }
+}
 $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 5000,
     arrows: false,
 
+});
+// 初期表示時の実行
+sliderSetting();
+
+// リサイズ時の実行
+$(window).resize(function() {
+    sliderSetting();
 });

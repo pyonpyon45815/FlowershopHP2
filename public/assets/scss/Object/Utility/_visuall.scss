@@ -1,7 +1,15 @@
-@media(max-width: 1280px) {
+@media(max-width: 1279px) {
     .slider {
         display: flex;
         .c-image__pcflorist {
+            display: none;
+        }
+    }
+}
+
+@media(min-width: 1280px) {
+    .slider {
+        .c-image__florist {
             display: none;
         }
     }

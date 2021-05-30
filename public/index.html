@@ -247,7 +247,7 @@
 
             <!-- PHP実装テスト -->
             <style>
-                form {
+                .form-text {
                     font-size: 4rem;
                 }
                 
@@ -264,6 +264,12 @@
                     height: 15rem;
                     font-size: 4rem;
                 }
+                
+                select {
+                    width: 50rem;
+                    height: 7rem;
+                    font-size: 4rem;
+                }
             </style>
 
             <form action="http://localhost/sent.php" method="post">
@@ -273,6 +279,16 @@
 
                 <div class="form-text">内容</div>
                 <textarea name="body"></textarea>
+
+                <div class="form-text">年齢</div>
+                <select name="age">
+                    <option value="未選択">選択してください</option>
+                    <?php 
+                        for($i=6; $i<=100; $i++) {
+                            echo "<option value='{$i}'>{$i}</option>";
+                        }
+                    ?>
+                </select>
 
                 <input type="submit" value="送信">
 

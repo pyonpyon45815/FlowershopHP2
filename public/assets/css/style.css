@@ -653,7 +653,7 @@ article p {
 }
 
 .c-background__colorTwo {
-  background-color: #f3f3f3;
+  background-color: #d81414;
   height: 410rem;
   top: 565rem;
   position: absolute;
@@ -662,12 +662,10 @@ article p {
   left: 0;
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1600px) {
   .c-background__colorTwo {
-    position: fixed;
     height: 60rem;
-    top: 295rem;
-    background-color: red;
+    top: 390rem;
   }
 }
 
@@ -1187,6 +1185,9 @@ article p {
   h3 {
     font-size: 2rem;
     width: 14rem;
+  }
+  .c-background__colorTwo {
+    height: 37.5vw;
   }
 }
 

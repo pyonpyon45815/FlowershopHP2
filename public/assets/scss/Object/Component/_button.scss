@@ -1,78 +1,78 @@
-.c-button {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.c-button__contact {
-    width: 41.8rem;
-    height: 9.7rem;
-    font-size: 2.4rem;
-    margin-top: 8.3rem;
-    letter-spacing: 1.92px;
-    &:active {
-        width: 40rem;
-        height: 9rem;
-        font-size: 2.2rem;
-    }
-    .far {
-        margin-right: 2rem;
-    }
-}
-
-// ページトップ戻るボタン
-.pagetop {
-    display: none;
-    position: fixed;
-    right: 15px;
-    bottom: 60px;
-}
-
-.pagetop a {
-    display: block;
-    font-size: 0;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    background: #a9a9a9;
-    border-radius: 50%;
-    line-height: 50px;
-}
-
-.pagetop a i {
-    font-size: 20px;
-    color: #fff;
-    line-height: 50px;
-}
-
-@media(max-width: 749px) {
-    .c-button__contact {
-        width: 33rem;
-        height: 8rem;
-        font-size: 2rem;
-        &:active {
-            width: 31rem;
-            height: 7rem;
-            font-size: 1.8rem;
+        .c-button {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            z-index: 1;
         }
-    }
-}
-
-@media(min-width: 1280px) {
-    .c-button__contact {
-        margin-top: 4.5rem;
-        width: 35.2rem;
-        height: 8.2rem;
-        &:active {
-            width: 34rem;
-            height: 7.8rem;
+        
+        .c-button__contact {
+            width: 41.8rem;
+            height: 9.7rem;
+            font-size: 2.4rem;
+            margin-top: 8.3rem;
+            letter-spacing: 1.92px;
+            &:active {
+                width: 40rem;
+                height: 9rem;
+                font-size: 2.2rem;
+            }
+            .far {
+                margin-right: 2rem;
+            }
         }
-    }
-}
+        
+        // ページトップ戻るボタン
+        .pagetop {
+            display: none;
+            position: fixed;
+            right: 15px;
+            bottom: 60px;
+        }
+        
+        .pagetop a {
+            display: block;
+            font-size: 0;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            background: #a9a9a9;
+            border-radius: 50%;
+            line-height: 50px;
+        }
+        
+        .pagetop a i {
+            font-size: 20px;
+            color: #fff;
+            line-height: 50px;
+        }
+        
+        @media(max-width: 749px) {
+            .c-button__contact {
+                width: 33rem;
+                height: 8rem;
+                font-size: 2rem;
+                &:active {
+                    width: 31rem;
+                    height: 7rem;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        
+        @media(min-width: 1280px) {
+            .c-button__contact {
+                margin-top: 4.5rem;
+                width: 35.2rem;
+                height: 8.2rem;
+                &:active {
+                    width: 34rem;
+                    height: 7.8rem;
+                }
+            }
+        }

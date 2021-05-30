@@ -1,27 +1,25 @@
-    .c-background__color {
-        position: absolute;
-        bottom: 0;
-        top: 57rem;
-        z-index: -1;
-        height: 21rem;
-        background-color: rgb(243, 243, 243);
-    }
-    
-    .c-background__colorTwo {
-        background-color: rgb(243, 243, 243);
-        height: 410rem;
-        top: 565rem;
-        position: absolute;
-        z-index: -1;
-        right: 0;
-        left: 0;
-    }
-    
-    @media(max-width: 1280px) {
-        .c-background__colorTwo {
-            position: fixed;
-            height: 60rem;
-            top: 295rem;
-            background-color: red;
-        }
-    }
+       .c-background__color {
+           position: absolute;
+           bottom: 0;
+           top: 57rem;
+           z-index: -1;
+           height: 21rem;
+           background-color: rgb(243, 243, 243);
+       }
+       
+       .c-background__colorTwo {
+           background-color: rgb(216, 20, 20);
+           height: 410rem;
+           top: 565rem;
+           position: absolute;
+           z-index: -1;
+           right: 0;
+           left: 0;
+       }
+       
+       @media(min-width: 1600px) {
+           .c-background__colorTwo {
+               height: 60rem;
+               top: 390rem;
+           }
+       }

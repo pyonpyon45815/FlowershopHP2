@@ -1,33 +1,33 @@
- .p-section__concept {
-     text-align: center;
- }
- 
- .p-section__florist {
-     margin-top: 27rem;
- }
- 
- .p-section__contact {
-     background-image: url(../../assets/img/contact.jpg );
-     background-color: rgba(255, 255, 255, 0.6);
-     background-blend-mode: lighten;
-     background-repeat: no-repeat;
-     height: 73.5rem;
-     background-size: cover;
-     width: 100%;
-     text-align: center;
- }
- 
- @media(min-width: 1280px) {
-     .p-section__florist {
-         margin: 0;
-     }
-     .p-section__contact {
-         background-image: url(../../assets/img/pc-contact.jpg );
-         background-size: cover;
-         background-repeat: no-repeat;
-         width: 100%;
-     }
-     .p-section__contact {
-         height: 42rem;
-     }
- }
+         .p-section__concept {
+             text-align: center;
+         }
+         
+         .p-section__florist {
+             margin-top: 27rem;
+         }
+         
+         .p-section__contact {
+             background-image: url(../../assets/img/contact.jpg );
+             background-color: rgba(255, 255, 255, 0.6);
+             background-blend-mode: lighten;
+             background-repeat: no-repeat;
+             height: 73.5rem;
+             background-size: cover;
+             width: 100%;
+             text-align: center;
+         }
+         
+         @media(min-width: 1280px) {
+             .p-section__florist {
+                 margin: 0;
+             }
+             .p-section__contact {
+                 background-image: url(../../assets/img/pc-contact.jpg );
+                 background-size: cover;
+                 background-repeat: no-repeat;
+                 width: 100%;
+             }
+             .p-section__contact {
+                 height: 42rem;
+             }
+         }

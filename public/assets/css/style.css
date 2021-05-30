@@ -653,8 +653,8 @@ article p {
 }
 
 .c-background__colorTwo {
-  background-color: #d81414;
-  height: 410rem;
+  background-color: #f3f3f3;
+  height: 300rem;
   top: 565rem;
   position: absolute;
   z-index: -1;

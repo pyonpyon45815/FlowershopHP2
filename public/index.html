@@ -228,27 +228,67 @@
 
             <p class="c-p__contactText">イベントや結婚式でご利用する装花のご相談や、<br> フラワーアレンジメントのご予約などはこちらからお問い合わせください。
             </p>
-            <button class="c-button__contact" type="submit "><i class="far fa-envelope"></i>お問い合わせ</button>
+
+
+
+
+
+
+            <button class="c-button__contact js-contactModal-open" type="submit "><i class="far fa-envelope "></i>お問い合わせ</button>
+
         </section>
 
-
-
-
     </main>
+
+    <!-- contactModal -->
+    <div class="contactModal js-contactModal">
+        <div class="contactModal__bg js-contactModal-close"></div>
+        <div class="contactModal__content">
+
+            <!-- PHP実装テスト -->
+            <style>
+                form {
+                    font-size: 4rem;
+                }
+                
+                input {
+                    width: 50rem;
+                    height: 7rem;
+                    font-size: 4rem;
+                    display: block;
+                    margin: 0 auto;
+                }
+                
+                textarea {
+                    width: 50rem;
+                    height: 15rem;
+                    font-size: 4rem;
+                }
+            </style>
+
+            <form action="sent.php" method="post">
+
+                <div class="form-text">E-mailを入力してください</div>
+                <input type="text" name="email">
+
+                <div class="form-text">内容</div>
+                <textarea name="body"></textarea>
+
+                <input type="submit" value="送信">
+
+            </form>
+            <!-- ここまで -->
+
+            <a class="js-contactModal-close" href="">閉じる</a>
+        </div>
+        <!--modal__inner-->
+    </div>
+    <!--modal-->
+
     <!-- トップページ戻るボタン -->
-    <p class="pagetop" style="display: block;">
-        <a href="#">
-            <i class="fas fa-chevron-up"></i>
-        </a>
-    </p>
+    <p class="pagetop " style="display: block; "><a href="# "><i class="fas fa-chevron-up "></i></a></p>
 
-
-
-    <footer class="l-footer ">
-        <small class="c-small__footer">Copyright © Shiro All Rights Reserved</small>
-    </footer>
-
-
+    <footer class="l-footer "><small class="c-small__footer ">Copyright © Shiro All Rights Reserved</small></footer>
     <script src="assets/js/script.js "></script>
 </body>
 

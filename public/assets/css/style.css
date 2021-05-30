@@ -355,6 +355,10 @@ article p {
   margin: 4.2rem 3rem;
 }
 
+.activeModal {
+  display: none;
+}
+
 .c-image__heroLogo {
   width: 31.7rem;
   height: 12.9rem;
@@ -1008,7 +1012,7 @@ article p {
 }
 
 .modal__bg {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   height: 100vh;
   position: absolute;
   width: 100%;
@@ -1033,6 +1037,32 @@ article p {
   color: #ffffff;
   text-decoration: none;
   font-size: 3rem;
+}
+
+.contactModal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.contactModal__bg {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+
+.contactModal__content {
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
 }
 
 @media (min-width: 750px) {

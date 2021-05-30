@@ -20,7 +20,7 @@
 }
 
 .modal__bg {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     height: 100vh;
     position: absolute;
     width: 100%;
@@ -42,4 +42,29 @@
         text-decoration: none;
         font-size: 3rem;
     }
+}
+
+.contactModal {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.contactModal__bg {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+
+.contactModal__content {
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
 }

@@ -29,6 +29,24 @@ $(function() {
         return false; //<a>を無効化
     });
 });
+// contactModal
+$(function() {
+    var scrollPos; //topからのスクロール位置
+    $('.js-contactModal-open').click(function() {
+        $('.c-image__headerLogo').addClass('activeModal'); // モーダル時にヘッダーのロゴ隠す
+        scrollPos = $(window).scrollTop(); //トップからのスクロール位置を格納
+        $('.js-contactModal').fadeIn(); //モーダルフェードイン
+        $('body').addClass('fixed').css({ top: -scrollPos }); //背景固定
+        return false; //<a>を無効化
+    });
+    $('.js-contactModal-close').click(function() {
+        $('.c-image__headerLogo').removeClass('activeModal'); // モーダル閉時にヘッダーのロゴ表示
+        $('.js-contactModal').fadeOut(); //モーダルをフェードアウト
+        $('body').removeClass('fixed').css({ top: 0 }); //背景固定を解除
+        $(window).scrollTop(scrollPos); //元の位置までスクロール
+        return false; //<a>を無効化
+    });
+});
 
 // スムーススクロール
 $(function() {
@@ -76,9 +94,6 @@ $(window).scroll(function() {
     startPos = winScrollTop;
 });
 
-
-
-
 // トップページ戻るボタン
 $(window).scroll(function() {
     var now = $(window).scrollTop();
@@ -88,9 +103,8 @@ $(window).scroll(function() {
         $('.pagetop').fadeOut('slow');
     }
 });
+
 // 横スライダー
-
-
 function sliderSetting() {
     var width = $(window).width();
     if (width <= 1279) {

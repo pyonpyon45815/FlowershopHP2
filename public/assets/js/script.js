@@ -23,7 +23,8 @@ $(function() {
     $('.js-modal-open').click(function() {
         scrollPos = $(window).scrollTop(); //トップからのスクロール位置を格納
 
-        // ここの一行いらないかも
+        // ここの一行いらないかも!!!!!!!!!!!!!!!!!
+
         $('body').addClass('fixed').css({ top: -scrollPos }); //背景固定
         return false; //<a>を無効化
     });

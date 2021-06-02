@@ -1,12 +1,15 @@
 // ハンバーガーメニュー
 $(function() {
     $('#js-buttonHamburger').click(function() {
-
+        $('.js-modal').fadeToggle();
         if ($(this).attr('aria-expanded') == 'false') {
             $(this).attr('aria-expanded', true);
 
+
+
         } else {
             $(this).attr('aria-expanded', false);
+
         }
     });
 });
@@ -14,11 +17,13 @@ $(function() {
 
 
 // modal
+
 $(function() {
     var scrollPos; //topからのスクロール位置
     $('.js-modal-open').click(function() {
         scrollPos = $(window).scrollTop(); //トップからのスクロール位置を格納
-        $('.js-modal').fadeIn(); //モーダルフェードイン
+
+        // ここの一行いらないかも
         $('body').addClass('fixed').css({ top: -scrollPos }); //背景固定
         return false; //<a>を無効化
     });

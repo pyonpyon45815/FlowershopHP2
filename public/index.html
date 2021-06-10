@@ -240,6 +240,7 @@
 
     </main>
 
+
     <!-- contactModal -->
     <div class="contactModal js-contactModal">
         <div class="contactModal__bg js-contactModal-close"></div>
@@ -282,13 +283,13 @@
 
                 <div class="form-text">年齢</div>
                 <select name="age">
-                    <option value="未選択">選択してください</option>
-                    <?php 
-                        for($i=6; $i<=100; $i++) {
-                            echo "<option value='{$i}'>{$i}</option>";
-                        }
-                    ?>
-                </select>
+                <option value="未選択">選択してください</option>
+                <?php 
+                    for($i=6; $i<=100; $i++) {
+                        echo "<option value='{$i}'>{$i}</option>";
+                    }
+                ?>
+            </select>
 
                 <input type="submit" value="送信">
 
@@ -300,6 +301,8 @@
         <!--modal__inner-->
     </div>
     <!--modal-->
+
+
 
     <!-- トップページ戻るボタン -->
     <p class="pagetop " style="display: block; "><a href="# "><i class="fas fa-chevron-up "></i></a></p>

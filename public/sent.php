@@ -24,9 +24,7 @@
     <?php echo $_POST['age']; ?>
 
 </div>
-<?php 
-    echo '5 ＋ 2';
-?>
+
 
 
 

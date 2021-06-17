@@ -1,6 +1,9 @@
 // ハンバーガーメニュー
 $(function() {
     $('#js-buttonHamburger').click(function() {
+        $('body').toggleClass('is-drawerActive');
+
+
         if ($(this).attr('aria-expanded') == 'false') {
             $(this).attr('aria-expanded', true);
         } else {
@@ -10,9 +13,7 @@ $(function() {
 });
 
 
-
 // modal
-
 $(function() {
     var scrollPos; //topからのスクロール位置
     $('.js-modal-open').click(function() {
@@ -28,6 +29,10 @@ $(function() {
         return false; //<a>を無効化
     });
 });
+
+
+
+
 // contactModal
 $(function() {
     var scrollPos; //topからのスクロール位置

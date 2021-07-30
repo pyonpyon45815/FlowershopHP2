@@ -99,7 +99,7 @@ $(window).scroll(function() {
 });
 
 // トップページ戻るボタン
-$(window).scroll(function() {
+/*$(window).scroll(function() {
     var now = $(window).scrollTop();
     if (now > 200) {
         $('.pagetop').fadeIn("slow");
@@ -107,6 +107,16 @@ $(window).scroll(function() {
         $('.pagetop').fadeOut('slow');
     }
 });
+*/
+
+$(function() {
+    $('.pagetop').click(function() {
+        $('body,html').animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+});
+
+
 
 // 横スライダー
 function sliderSetting() {

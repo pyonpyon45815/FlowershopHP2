@@ -1,3 +1,4 @@
+// ハンバーガーボタン実装 
 .c-drawerToggle {
     z-index: 200;
     box-sizing: border-box;
@@ -6,7 +7,6 @@
     right: 0;
     display: inline-block;
     width: 30rem;
-    height: 30rem;
 }
 
 .c-drawerToggle span {
@@ -29,10 +29,11 @@
     margin-top: 6rem;
 }
 
+// ハンバーガーボタン✖印へ変更
 .c-drawerToggle.open span {
-    top: 29px;
-    left: 14px;
-    width: 35px;
+    top: 70px;
+    left: 150px;
+    width: 10rem;
     margin: 0;
 }
 

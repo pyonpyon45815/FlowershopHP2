@@ -478,7 +478,6 @@ article p {
   right: 0;
   display: inline-block;
   width: 30rem;
-  height: 30rem;
 }
 
 .c-drawerToggle span {
@@ -502,9 +501,9 @@ article p {
 }
 
 .c-drawerToggle.open span {
-  top: 29px;
-  left: 14px;
-  width: 35px;
+  top: 70px;
+  left: 150px;
+  width: 10rem;
   margin: 0;
 }
 
@@ -1040,6 +1039,13 @@ input {
   display: flex;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .fixed {
   position: fixed;
   left: 0;
@@ -1052,7 +1058,6 @@ input {
 }
 
 .modal {
-  display: none;
   height: 100vh;
   position: fixed;
   top: 0;

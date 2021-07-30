@@ -469,35 +469,57 @@ article p {
   }
 }
 
-.c-button {
-  position: relative;
+.c-drawerToggle {
+  z-index: 200;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
   display: inline-block;
-  text-decoration: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 1;
+  width: 30rem;
+  height: 30rem;
 }
 
-.c-button__contact {
-  width: 41.8rem;
-  height: 9.7rem;
-  font-size: 2.4rem;
-  margin-top: 8.3rem;
-  letter-spacing: 1.92px;
+.c-drawerToggle span {
+  position: absolute;
+  top: 40px;
+  left: 150px;
+  display: inline-block;
+  width: 10rem;
+  height: 6px;
+  border-radius: 2px;
+  background-color: white;
+  vertical-align: top;
 }
 
-.c-button__contact:active {
-  width: 40rem;
-  height: 9rem;
-  font-size: 2.2rem;
+.c-drawerToggle span:nth-child(2) {
+  margin-top: 3rem;
 }
 
-.c-button__contact .far {
-  margin-right: 2rem;
+.c-drawerToggle span:last-child {
+  margin-top: 6rem;
+}
+
+.c-drawerToggle.open span {
+  top: 29px;
+  left: 14px;
+  width: 35px;
+  margin: 0;
+}
+
+.c-drawerToggle.open span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.c-drawerToggle.open span:nth-child(2) {
+  display: none;
+}
+
+.c-drawerToggle.open span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .pagetop {

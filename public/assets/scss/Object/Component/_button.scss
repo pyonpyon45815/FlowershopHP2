@@ -19,6 +19,7 @@
     border-radius: 2px;
     background-color: white;
     vertical-align: top;
+    transition: .9s;
 }
 
 .c-drawerToggle span:nth-child(2) {
@@ -35,7 +36,6 @@
     left: 150px;
     width: 10rem;
     margin: 0;
-    transition-duration: 2s;
 }
 
 .c-drawerToggle.open span:first-child {

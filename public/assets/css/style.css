@@ -490,6 +490,8 @@ article p {
   border-radius: 2px;
   background-color: white;
   vertical-align: top;
+  -webkit-transition: .9s;
+  transition: .9s;
 }
 
 .c-drawerToggle span:nth-child(2) {

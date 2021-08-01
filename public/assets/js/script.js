@@ -1,16 +1,14 @@
-// ハンバーガーメニュー
+// ハンバーガーメニュー&モーダルセット
 $(function() {
     $('.c-drawerToggle').click(function() {
         $(this).toggleClass('open'); // ハンバーガーメニュー→✖
         $('.modal').fadeToggle(1000); // モーダル表示⇔ 非表示
-        $('body').toggleClass('fixed').css({ top: -scrollPos }); //背景固定
-
+        $('body').toggleClass('fixed'); //背景固定
     });
     $('.js-modal-close').click(function() {
         $('.modal').fadeOut(1000); // モーダル非表示
-        $('body').removeClass('fixed').css({ top: -scrollPos }); //背景固定解除
-        $('.c-drawerToggle').removeClass('open');
-        return false;
+        $('.c-drawerToggle').removeClass('open'); //✖→ハンバーガーメニュー
+        $('body').removeClass('fixed'); //背景固定解除
     });
 });
 

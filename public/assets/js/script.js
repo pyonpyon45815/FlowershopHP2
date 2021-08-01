@@ -1,25 +1,19 @@
 // ハンバーガーメニュー
-$('.c-drawerToggle').click(function() {
-    $(this).toggleClass('open');
-});
-
-
-// modal
 $(function() {
-    var scrollPos; //topからのスクロール位置
-    $('.js-modal-open').click(function() {
-        scrollPos = $(window).scrollTop(); //トップからのスクロール位置を格納
-        $('.js-modal').fadeIn(); //モーダルフェードイン
-        $('body').addClass('fixed').css({ top: -scrollPos }); //背景固定
-        return false; //<a>を無効化
+    $('.c-drawerToggle').click(function() {
+        $(this).toggleClass('open'); // ハンバーガーメニュー→✖
+        $('.modal').fadeToggle(1000); // モーダル表示⇔ 非表示
+        $('body').toggleClass('fixed').css({ top: -scrollPos }); //背景固定
+
     });
     $('.js-modal-close').click(function() {
-        $('.js-modal').fadeOut(); //モーダルをフェードアウト
-        $('body').removeClass('fixed').css({ top: 0 }); //背景固定を解除
-        $(window).scrollTop(scrollPos); //元の位置までスクロール
-        return false; //<a>を無効化
+        $('.modal').fadeOut(1000); // モーダル非表示
+        $('body').removeClass('fixed').css({ top: -scrollPos }); //背景固定解除
+        $('.c-drawerToggle').removeClass('open');
+        return false;
     });
 });
+
 
 
 

@@ -959,13 +959,6 @@ input {
   display: flex;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .fixed {
   position: fixed;
   left: 0;
@@ -978,17 +971,24 @@ input {
 }
 
 .modal {
+  display: none;
   height: 100vh;
-  position: fixed;
   top: 0;
   width: 100%;
+  position: fixed;
+}
+
+.md-open {
+  display: block;
 }
 
 .modal__bg {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   height: 100vh;
   position: absolute;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .modal__content {

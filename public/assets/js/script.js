@@ -1,3 +1,23 @@
+// ハンバーガーメニュー&モーダルセット
+$(function() {
+    var scrollPos; //topからのスクロール位置 
+    $('.c-drawerToggle').click(function() {
+        scrollPos = $(window).scrollTop(); //トップからのスクロール位置を格納
+        $(this).toggleClass('open'); // ハンバーガーメニュー→✖
+        $('.modal').fadeToggle(1000); // モーダル表示⇔ 非表示    
+        $('body').toggleClass('fixed').css({ top: -scrollPos }); //背景固定 
+        $(window).scrollTop(scrollPos); //元の位置までスクロール
+        return false; //<a>を無効化
+    });
+    $('.js-modal-close').click(function() {
+        $('.modal').fadeOut(1000); // モーダル非表示
+        $('.c-drawerToggle').removeClass('open'); //✖→ハンバーガーメニュー
+        $('body').removeClass('fixed').css({ top: 0 }); //背景固定解除
+        $(window).scrollTop(scrollPos); //元の位置までスクロール
+        return false; //<a>を無効化
+    });
+});
+
 //スムーススクロール
 $('#page-link a[href*="#"]').click(function() {
     var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
@@ -5,32 +25,6 @@ $('#page-link a[href*="#"]').click(function() {
     $('body,html').animate({ scrollTop: pos }, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
     return false;
 });
-
-
-
-// ハンバーガーメニュー&モーダルセット
-$(function() {
-    $('.c-drawerToggle').click(function() {
-        var scrollPos; //topからのスクロール位置 
-        scrollPos = $(window).scrollTop(); //トップからのスクロール位置を格納
-        $(this).toggleClass('open'); // ハンバーガーメニュー→✖
-        $('.modal').fadeToggle(1000); // モーダル表示⇔ 非表示    
-        $('body').toggleClass('fixed').css({ top: -scrollPos }); //背景固定
-        return false; //<a>を無効化
-    });
-    $('.js-modal-close').click(function() {
-        $('.modal').fadeOut(1000); // モーダル非表示
-        $('.c-drawerToggle').removeClass('open'); //✖→ハンバーガーメニュー
-        $('body').removeClass('fixed').css({ top: 0 }); //背景固定解除
-
-
-
-
-        return false; //<a>を無効化
-    });
-});
-
-
 
 
 

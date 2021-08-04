@@ -91,14 +91,32 @@ $(function() {
 
 
 
-// 横スライダー
 
-$('.slider').slick({
-    autoplay: true,
-    autoplaySpeed: 5000,
-    dots: true,
+
+function sliderSetting() {
+    var width = $(window).width();
+    if (width <= 1279) {
+        $('.slider').not('.slick-initialized').slick();
+    } else {
+        $('.slider.slick-initialized').slick('unslick');
+    }
+}
+
+
+$(".slider").slick({
+    speed: 1000,
+    dots: false,
+    arrows: false,
+    centerMode: true,
+    centerPadding: '10%',
 
 });
+
+
+
+
+
+
 // 初期表示時の実行
 sliderSetting();
 

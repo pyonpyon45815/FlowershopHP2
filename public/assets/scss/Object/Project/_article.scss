@@ -6,6 +6,10 @@
         text-align: right;
     }
     
+    .p-article__florist {
+        padding: 0 1rem;
+    }
+    
     @media(min-width: 1280px) {
         .p-articleWrapper__works {
             display: flex;

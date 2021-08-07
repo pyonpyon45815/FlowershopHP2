@@ -549,10 +549,10 @@ article p {
 
 @media (max-width: 1279px) {
   .c-button__contact {
-    margin-top: 3rem;
-    width: 33rem;
-    height: 8rem;
-    font-size: 2.5rem;
+    margin-top: 4rem;
+    width: 57rem;
+    height: 13rem;
+    font-size: 3.5rem;
   }
   .c-button__contact:active {
     width: 31rem;
@@ -915,6 +915,10 @@ input {
   text-align: right;
 }
 
+.p-article__florist {
+  padding: 0 1rem;
+}
+
 @media (min-width: 1280px) {
   .p-articleWrapper__works {
     display: -webkit-box;
@@ -1081,6 +1085,15 @@ input {
     font-size: 3.2vw;
     letter-spacing: 0.128vw;
     margin-top: 6.66667vw;
+  }
+}
+
+@media (max-width: 749px) {
+  .c-button__contact {
+    width: 76vw;
+    font-size: 4.66667vw;
+    height: 17.33333vw;
+    margin-top: 5.33333vw;
   }
 }
 

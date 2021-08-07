@@ -21,7 +21,7 @@ $(function() {
 //スムーススクロール
 $('#page-link a[href*="#"]').click(function() {
     var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
-    var pos = $(elmHash).offset().top - 90; //idの上部の距離を取得 -90は基準となる移動先から-90pxずらして表示する意味
+    var pos = $(elmHash).offset().top + 70; //idの上部の距離を取得 -90は基準となる移動先から-90pxずらして表示する意味
     $('body,html').animate({ scrollTop: pos }, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
     return false;
 });
@@ -35,7 +35,7 @@ $(function() {
         $('.c-image__headerLogo').addClass('activeModal'); // モーダル時にヘッダーのロゴ隠す
         scrollPos = $(window).scrollTop(); //トップからのスクロール位置を格納
         $('.js-contactModal').fadeIn(); //モーダルフェードイン
-        $('span').fadeOut(-100); //ハンバーガーメニュー消す
+        $('.l-header').fadeOut(-100); //ヘッダーメニュー消す
         $('.pagetop').fadeOut(-100); //トップへボタン消す
         $('body').addClass('fixed').css({ top: -scrollPos }); //背景固定
         return false; //<a>を無効化
@@ -43,7 +43,7 @@ $(function() {
     $('.js-contactModal-close').click(function() {
         $('.c-image__headerLogo').removeClass('activeModal'); // モーダル閉時にヘッダーのロゴ表示
         $('.js-contactModal').fadeOut(); //モーダルをフェードアウト
-        $('span').fadeIn(); //ハンバーガーメニュー消す
+        $('.l-header').fadeIn(); //ヘッダーメニュー表示
         $('body').removeClass('fixed').css({ top: 0 }); //背景固定を解除
         $(window).scrollTop(scrollPos); //元の位置までスクロール
         return false; //<a>を無効化

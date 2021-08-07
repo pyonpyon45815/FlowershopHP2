@@ -2,24 +2,31 @@
     margin-top: 4rem;
 }
 
+.p-PCpage-link {
+    display: none;
+}
+
 @media(min-width: 1280px) {
     .p-ul__access {
         margin-left: 4rem;
         height: 21.2rem;
         width: 100%;
     }
-    .p-PCpage-link ul {
-        display: flex;
-        margin: 5rem;
-        li {
-            list-style: none;
-            a {
-                color: white;
-                text-decoration: none;
-                font-size: 4rem;
-                margin-left: 3rem;
-                &:hover {
-                    color: black;
+    .p-PCpage-link {
+        display: block;
+        ul {
+            display: flex;
+            margin: 5rem;
+            li {
+                list-style: none;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 4rem;
+                    margin-left: 3rem;
+                    &:hover {
+                        color: rgb(195, 195, 195);
+                    }
                 }
             }
         }

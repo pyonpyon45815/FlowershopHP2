@@ -998,11 +998,18 @@ input {
   margin-top: 4rem;
 }
 
+.p-PCpage-link {
+  display: none;
+}
+
 @media (min-width: 1280px) {
   .p-ul__access {
     margin-left: 4rem;
     height: 21.2rem;
     width: 100%;
+  }
+  .p-PCpage-link {
+    display: block;
   }
   .p-PCpage-link ul {
     display: -webkit-box;
@@ -1020,7 +1027,7 @@ input {
     margin-left: 3rem;
   }
   .p-PCpage-link ul li a:hover {
-    color: black;
+    color: #c3c3c3;
   }
 }
 
@@ -1249,6 +1256,9 @@ select {
   .pagetop a i {
     font-size: 1.5625vw;
     line-height: 3.90625vw;
+  }
+  .p-PCpage-link ul li a {
+    font-size: 1.95312vw;
   }
 }
 

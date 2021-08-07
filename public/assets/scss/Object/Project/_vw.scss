@@ -144,6 +144,9 @@
                     font-size: pxtovw1280(20);
                     line-height: pxtovw1280(50);
                 }
+                .p-PCpage-link ul li a {
+                    font-size: pxtovw1280(25);
+                }
             }
             
             @media (min-width: 1280px) and (max-width: 1600px) {

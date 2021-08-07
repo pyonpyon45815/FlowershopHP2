@@ -558,9 +558,9 @@ article p {
     font-size: 3.5rem;
   }
   .c-button__contact:active {
-    width: 31rem;
-    height: 7rem;
-    font-size: 1.8rem;
+    width: 55rem;
+    height: 12rem;
+    font-size: 3rem;
   }
   .c-button__contact .far {
     margin-right: 2rem;
@@ -1057,11 +1057,24 @@ input {
   width: 100%;
 }
 
+.js-contactModal-close {
+  margin-top: 3rem;
+  text-decoration: none;
+  color: black;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+}
+
 .contactModal__bg {
   background: rgba(0, 0, 0, 0.8);
   height: 100vh;
   position: absolute;
   width: 100%;
+  margin: 0;
 }
 
 .contactModal__content {

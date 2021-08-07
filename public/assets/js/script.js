@@ -35,12 +35,15 @@ $(function() {
         $('.c-image__headerLogo').addClass('activeModal'); // モーダル時にヘッダーのロゴ隠す
         scrollPos = $(window).scrollTop(); //トップからのスクロール位置を格納
         $('.js-contactModal').fadeIn(); //モーダルフェードイン
+        $('span').fadeOut(-100); //ハンバーガーメニュー消す
+        $('.pagetop').fadeOut(-100); //トップへボタン消す
         $('body').addClass('fixed').css({ top: -scrollPos }); //背景固定
         return false; //<a>を無効化
     });
     $('.js-contactModal-close').click(function() {
         $('.c-image__headerLogo').removeClass('activeModal'); // モーダル閉時にヘッダーのロゴ表示
         $('.js-contactModal').fadeOut(); //モーダルをフェードアウト
+        $('span').fadeIn(); //ハンバーガーメニュー消す
         $('body').removeClass('fixed').css({ top: 0 }); //背景固定を解除
         $(window).scrollTop(scrollPos); //元の位置までスクロール
         return false; //<a>を無効化

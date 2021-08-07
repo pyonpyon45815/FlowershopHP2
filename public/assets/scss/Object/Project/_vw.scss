@@ -37,6 +37,13 @@
                     height: pxtovw750(130);
                     margin-top: pxtovw750(40);
                 }
+                .c-button__contact {
+                    &:active {
+                        width: pxtovw750(550);
+                        height: pxtovw750(125);
+                        font-size: pxtovw750(30);
+                    }
+                }
             }
             
             @media(min-width: 1280px) {

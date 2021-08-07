@@ -298,6 +298,12 @@ article p {
   top: 0;
   -webkit-transition: .9s;
   transition: .9s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .active {
@@ -548,6 +554,12 @@ article p {
 
 .top-active {
   display: none;
+}
+
+@media (min-width: 1280px) {
+  .c-drawerToggle {
+    display: none;
+  }
 }
 
 @media (max-width: 1279px) {
@@ -991,6 +1003,24 @@ input {
     margin-left: 4rem;
     height: 21.2rem;
     width: 100%;
+  }
+  .p-PCpage-link ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 5rem;
+  }
+  .p-PCpage-link ul li {
+    list-style: none;
+  }
+  .p-PCpage-link ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 4rem;
+    margin-left: 3rem;
+  }
+  .p-PCpage-link ul li a:hover {
+    color: black;
   }
 }
 

@@ -78,6 +78,12 @@
             display: none;
         }
         
+        @media(min-width: 1280px) {
+            .c-drawerToggle {
+                display: none;
+            }
+        }
+        
         @media(max-width: 1279px) {
             .c-button__contact {
                 margin-top: 4rem;

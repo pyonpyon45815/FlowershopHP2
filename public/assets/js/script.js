@@ -47,14 +47,6 @@ $(function() {
     });
 });
 
-
-
-
-
-
-
-
-
 // スクロールからのheader固定
 $(function() {
     var blackHeader = $('.l-header');
@@ -86,6 +78,14 @@ $(function() {
     $('.pagetop').click(function() {
         $('body,html').animate({ scrollTop: 0 }, 500);
         return false;
+    });
+    var blacktop = $('.pagetop'); //ボタン途中からフワッと表示
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 600) {
+            blacktop.fadeIn(1000); //トップへ戻るとボタン消える
+        } else {
+            blacktop.fadeOut(1000); //下へスクロールするとボタン表示
+        }
     });
 });
 

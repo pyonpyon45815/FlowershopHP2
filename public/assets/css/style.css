@@ -1333,27 +1333,35 @@ select {
   }
 }
 
-body {
-  background: rgba(0, 0, 0, 0.8);
+.content-body .display-contact-wrapper {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body .display-contact-wrapper {
-  position: relative;
-}
-
-body .display-contact-wrapper .display-contact {
+.content-body .display-contact-wrapper .display-contact {
   background-color: white;
-  margin: 0 auto;
   width: 50%;
+  height: 50%;
   text-align: center;
-  position: absolute;
 }
 
-body .display-contact-wrapper .display-contact top .form-title {
+.content-body .display-contact-wrapper .display-contact .form-title {
   font-size: 2rem;
+  margin: 5rem 0 6rem 0;
 }
 
-body .display-contact-wrapper .display-contact .form-item {
+.content-body .display-contact-wrapper .display-contact .form-item {
   font-size: 2rem;
+  margin-bottom: 6rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -11,13 +11,18 @@
             width: 50%;
             height: 50%;
             text-align: center;
-            .form-title {
-                font-size: 2rem;
-                margin: 5rem 0 6rem 0;
-            }
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             .form-item {
-                font-size: 2rem;
-                margin-bottom: 6rem;
+                font-size: 3rem;
+                text-decoration: none;
+                a {
+                    color: #000;
+                    &:hover {
+                        color: red;
+                    }
+                }
             }
         }
     }

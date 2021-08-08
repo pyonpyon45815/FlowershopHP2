@@ -1353,15 +1353,27 @@ select {
   width: 50%;
   height: 50%;
   text-align: center;
-}
-
-.content-body .display-contact-wrapper .display-contact .form-title {
-  font-size: 2rem;
-  margin: 5rem 0 6rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .content-body .display-contact-wrapper .display-contact .form-item {
-  font-size: 2rem;
-  margin-bottom: 6rem;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.content-body .display-contact-wrapper .display-contact .form-item a {
+  color: #000;
+}
+
+.content-body .display-contact-wrapper .display-contact .form-item a:hover {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

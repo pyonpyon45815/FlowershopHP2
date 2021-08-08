@@ -1,0 +1,20 @@
+body {
+    background: rgba(0, 0, 0, 0.8);
+    .display-contact-wrapper {
+        position: relative;
+        .display-contact {
+            background-color: white;
+            width: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            .form-item {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+}

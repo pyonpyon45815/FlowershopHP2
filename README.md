@@ -20,7 +20,7 @@
  
 ●Google Hosted Libraries
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-上記コードをheadタグ内へ追記
+上記コードをheadタグ内へ追記。
  
 # 使用法
  
@@ -29,7 +29,7 @@
  
 # ノート
  
-一部UI/UXが崩れる可能性あり
+一部UI/UXが崩れる可能性あり。
  
 # 著者
  
